@@ -1,0 +1,9 @@
+/* These are properties that apply across more than one component. */
+:root {
+    --side-space: 200px;
+}
+
+.side-space {
+    width: var(--side-space);
+    background-color: chocolate;
+}

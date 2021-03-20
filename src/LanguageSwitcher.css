@@ -1,0 +1,20 @@
+.LanguageSwitcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flag {
+    height: 30px;
+}
+
+.front-flag {
+    margin-right: -15px;
+    margin-bottom: -7px; 
+    z-index: 2;
+}
+
+.back-flag {
+    z-index: 1;
+}
