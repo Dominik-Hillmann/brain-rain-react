@@ -5,16 +5,47 @@
     height: 100%;
 }
 
+#flags-container {
+    filter: drop-shadow(1px 3px 3px black);
+    cursor: pointer;
+    animation-name: flag-shadows-reverse;
+    animation-duration: 0.2s;
+}
+
+#flags-container:hover {
+    filter: drop-shadow(1px 7px 3px black);
+    animation-name: flag-shadows;
+    animation-duration: 0.2s;
+}
+
+@keyframes flag-shadows {
+    from {
+        filter: drop-shadow(1px 3px 3px black);
+    } to {
+        filter: drop-shadow(1px 6px 3px black);
+    }
+}
+
+@keyframes flag-shadows-reverse {
+    from {
+        filter: drop-shadow(1px 6px 3px black);
+    } to {
+        filter: drop-shadow(1px 3px 3px black);
+    }
+}
+
 .flag {
-    height: 30px;
+    height: 30px;    
 }
 
 .front-flag {
+    position: relative;
     margin-right: -15px;
     margin-bottom: -7px; 
     z-index: 2;
 }
 
 .back-flag {
+    position: relative;
     z-index: 1;
 }

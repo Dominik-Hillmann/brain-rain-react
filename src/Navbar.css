@@ -1,71 +1,7 @@
-/* header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    color: black;
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    z-index: 9;
-}
-.at-top {
-    height: 61px;
-    animation: back-at-top 100ms ease-in-out;
-    box-shadow: 0px 0px 0px black;
-}
-.not-at-top {
-    height: 45px;
-    animation: away-from-top 100ms ease-in-out;    
-    box-shadow: 6px 6px 6px rgba(165, 165, 165, 0.5)
-}
-@keyframes back-at-top { 
-    from { 
-        height: 45px; 
-        box-shadow: 6px 6px 6px rgba(165, 165, 165, 0.5)
-    } to { 
-        height: 61px;
-        box-shadow: 0px 0px 0px black;
-    } 
-}
-@keyframes away-from-top { 
-    from {
-        height: 60px;
-        box-shadow: 6px 6px 6px rgba(165, 165, 165, 0.5)
-    } to { 
-        height: 45px;
-        box-shadow: 0px 0px 0px black;
-    } 
-}
-header div:first-of-type {
-    width: calc(100% - 100px);
-    margin: auto;    
-}
-#headerlogo {
-    margin: 0;
-    padding: 5px 5px 5px 0;
-    display: inline-flex;
-    width: 25%;
-}
-#headerlogo > * {
-    display: inline-flex;
-}
-#headerlogo > img {
-    height: 30px;
-    margin-right: 5px;
-}
-#headerlogo h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 25px;
-    border-bottom: 2px solid #ff4951;
-    border-top: 2px solid #ff4951;
-} */
-
 header {
     display: flex;
     justify-content: space-between;
+    height: 70px; /* Höhe Header. */
 }
 
 #logo-wrapper {
@@ -74,13 +10,27 @@ header {
     justify-content: center;
 }
 
-#logo-wrapper img {
-    height: 50px;
+#menu-items {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
-header h1 {
-    border-top: 3px black;
+#menu-items p {
+    margin-right: 20px; /* Abstand Menüelemente. */
+    font-family: 'Celias', sans-serif;
+    font-weight: bold;
 }
+
+#menu-items p span {
+    margin-left: 4px;
+}
+
+#logo-wrapper img {
+    height: 30px;
+}
+
 
 p.currently-shown {
     color: green  !important;
