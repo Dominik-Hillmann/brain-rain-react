@@ -21,7 +21,6 @@ const set2ndPartWelcomeText = () => {
     secondText.style.width = `${(2 / 5) * menuItems.offsetWidth + 20}px`;
 };
 
-// window.onload(setLeftMarginWelcomeText);
 window.addEventListener('resize', () => {
     setLeftMarginWelcomeText();
     set1stPartWelcomeText();

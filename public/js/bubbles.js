@@ -1,5 +1,5 @@
 // Only execute when everything else is loaded.
-window.onload = () => {
+const bubbles = () => {
     const maxMobileWidth = 800;
     
     function getRand(min, max, int) {
