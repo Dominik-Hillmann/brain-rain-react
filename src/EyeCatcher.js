@@ -16,6 +16,7 @@ export default class EyeCatcher extends Component {
     render() {
         return (
             <div className="EyeCatcher" id="eyecatcher">
+                <div className="side-space"><p>s</p></div>
                 <img 
                     src={negativeLogo} 
                     id="eyecatcher-logo" 
@@ -27,12 +28,14 @@ export default class EyeCatcher extends Component {
                 <h2 id="num">{toRoman(parseInt(new Date().getFullYear()))}</h2>
                 <div id="welcome-text-wrapper">
                     <div id="welcome-text">
-                        <p>
-                            We are <span className ="brain-rain-name">BRAINRAIN</span>,
-                            we make personalized items for you
+                        <p id="first-part-welcome">
+                            Hi, we are <span className ="brain-rain-name">BRAINRAIN</span> 👋.
+                            We make personalized items for you
                             or your friends and family.
+                        </p>
+                        <p id="second-part-welcome">
                             Currently, we offer custom made wooden 
-                            key fobs and posters.<br />
+                            key fobs and posters.
                             Take a look at them right here <span>👇</span>.
                         </p>
                         {/* <button><a href="https://www.etsy.com/de/shop/BRAINRAINShop">ETSY SHOP</a></button> */}

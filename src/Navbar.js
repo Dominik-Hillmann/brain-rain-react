@@ -5,8 +5,6 @@ import logo from './brain-rain-logo.png';
 import LanguageSwitcher from './LanguageSwitcher.js';
 // Library
 import React, { Component } from 'react';
-import { Shop, Mailbox, Cart4 } from 'react-bootstrap-icons';
-
 
 export default class Navbar extends Component {
     // Idee: wenn ganz oben, dann Logo zu sehen, wenn weiter unten, dann
@@ -24,10 +22,10 @@ export default class Navbar extends Component {
                     {/* <h1>BRAINRAIN</h1> */}
 
                     <div id="menu-items">
-                        <p className="currently-shown">About</p>
-                        <p>Products</p>
-                        <p>Contact</p>
-                        <p>Etsy Shop</p>
+                        <p>💁‍♂️<span className="currently-shown">About</span></p>
+                        <p>✨<span>Products</span></p>
+                        <p>✍️<span>Contact</span></p>
+                        <p>🏬<span>Etsy Shop</span></p>
                     </div>
 
                     <div className="side-space">

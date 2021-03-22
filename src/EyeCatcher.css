@@ -6,7 +6,7 @@
     height: var(--eyecatcher-height);
     padding-top: 60px;
     display: block;
-    z-index: -100;
+    /* z-index: -100; */
 }
 
 /*  */
@@ -27,7 +27,7 @@
     font-family: 'Montserrat';
     font-weight: 700;
     font-style: italic;
-    text-shadow: 3px 3px 3px #ff4951;
+    text-shadow: 3px 3px 3px var(--brain-rain-pink);
     letter-spacing: 5px;
 }
 
@@ -77,35 +77,56 @@
     right: 300px;
     top: 320px;
     /* Coloring */
-    color: #ff4951;
+    color: var(--brain-rain-pink);
     font-family: 'Montserrat';
     font-style: italic;
     font-size: 50px;
     text-shadow: 3px 3px 3px white;
 }
 
-
-/* #welcome-text */
 #welcome-text-wrapper {
+    /* background-color: darkcyan; */
     position: absolute;
     z-index: 3;
-    width: 28%;
+    /* width: 28%; */
     left: 0;
     text-align: left;
-    margin-left: calc(var(--side-space) - 40px);
+    margin-left: 10%;
+
+    top: calc(var(--header-height) + 50px);
+    /* display: flex;
+    align-items: center; */
 }
 
 #welcome-text p {
+    /* background-color: darkmagenta; */
     font-family: 'Celias', sans-serif;
     font-size: 35px;
     font-weight: 500;
     color: black;
 }
 
+@media (max-width: 1474px) {
+    #welcome-text p { font-size: 30px; }
+}
+
+@media (max-width: 1205px) {
+    #welcome-text p { font-size: 27px; }
+}
+
+#first-part-welcome {
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+#second-part-welcome {
+    width: 600px;
+}
+
 #welcome-text p > span.brain-rain-name {
     font-family: 'Celias', serif;
-    border-top: 3px #ff4951 solid;
-    border-bottom: 3px #ff4951 solid;
+    border-top: 3px var(--brain-rain-pink) solid;
+    border-bottom: 3px var(--brain-rain-pink) solid;
     font-weight: 700;
 }
 

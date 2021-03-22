@@ -2,6 +2,13 @@ header {
     display: flex;
     justify-content: space-between;
     height: 70px; /* Höhe Header. */
+
+    z-index: 5 !important;
+}
+
+.Navbar {
+
+    z-index: 5 !important;
 }
 
 #logo-wrapper {
@@ -18,20 +25,67 @@ header {
 }
 
 #menu-items p {
-    margin-right: 20px; /* Abstand Menüelemente. */
+    margin-right: 30px; /* Abstand Menüelemente. */
     font-family: 'Celias', sans-serif;
     font-weight: bold;
 }
 
 #menu-items p span {
-    margin-left: 4px;
+    margin-left: 5px;
 }
 
 #logo-wrapper img {
     height: 30px;
+    animation: logo-growth-reverse 1s;
 }
 
+#logo-wrapper img:hover {
+    height: 40px;
+    animation: logo-growth 1s;
+}
 
-p.currently-shown {
-    color: green  !important;
+@keyframes logo-growth {
+    from { height: 30px } to { height: 40px }
+}
+
+@keyframes logo-growth-reverse {
+    from { height: 40px } to { height: 30px }
+}
+
+#menu-items p span.currently-shown {
+    /* border-top: 3px solid white;
+
+    padding-top: 2px solid white;
+    padding-bottom: 2px solid white;
+    border-bottom: 3px var(--brain-rain-pink) solid; */
+}
+
+#menu-items p {    
+    animation: show-menu-item-border-reverse 0.09s;
+}
+
+#menu-items p:hover {
+    border-top: 3px solid var(--brain-rain-pink);
+    border-bottom: 3px var(--brain-rain-pink) solid;
+    animation: show-menu-item-border 0.09s;
+}
+
+@keyframes show-menu-item-border {
+    from {        
+        border-top: 0px solid var(--brain-rain-pink);
+        border-bottom: 0px solid var(--brain-rain-pink);
+    } to {
+        border-top: 3px solid var(--brain-rain-pink);
+        border-bottom: 3px solid var(--brain-rain-pink);
+    }
+}
+
+@keyframes show-menu-item-border-reverse {
+    from {
+        border-top: 3px solid var(--brain-rain-pink);
+        border-bottom: 3px solid var(--brain-rain-pink);
+    } to {
+        border-top: 0px solid var(--brain-rain-pink);
+        border-bottom: 0px solid var(--brain-rain-pink);
+    }
 }

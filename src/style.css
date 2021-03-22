@@ -3,6 +3,7 @@
     --side-space: 200px;
     --eyecatcher-height: 600px;
     --header-height: 70px;
+    --brain-rain-pink: #ff4951;
 }
 
 .side-space {
@@ -40,3 +41,5 @@
     font-style: normal;
     font-display: swap;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
