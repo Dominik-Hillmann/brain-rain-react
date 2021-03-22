@@ -29,14 +29,15 @@ export default class EyeCatcher extends Component {
                 <div id="welcome-text-wrapper">
                     <div id="welcome-text">
                         <p id="first-part-welcome">
-                            Hi, we are <span className ="brain-rain-name">BRAINRAIN</span> 👋.
+                            Hi, we are&nbsp;
+                            <span className ="brain-rain-name">BRAINRAIN</span> <span className="shaking-hand">👋</span>.
                             We make personalized items for you
                             or your friends and family.
                         </p>
                         <p id="second-part-welcome">
                             Currently, we offer custom made wooden 
                             key fobs and posters.
-                            Take a look at them right here <span>👇</span>.
+                            Take a look at them right here <span className="pointing-hand">👇</span>.
                         </p>
                         {/* <button><a href="https://www.etsy.com/de/shop/BRAINRAINShop">ETSY SHOP</a></button> */}
                         {/* <button><a href="./contact.php">CONTACT</a></button> */}
