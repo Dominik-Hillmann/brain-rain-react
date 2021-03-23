@@ -39,8 +39,6 @@ export default class EyeCatcher extends Component {
                             key fobs and posters.
                             Take a look at them right here <span className="pointing-hand">👇</span>.
                         </p>
-                        {/* <button><a href="https://www.etsy.com/de/shop/BRAINRAINShop">ETSY SHOP</a></button> */}
-                        {/* <button><a href="./contact.php">CONTACT</a></button> */}
                     </div>
                 </div>
                 <img 

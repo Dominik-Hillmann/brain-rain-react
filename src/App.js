@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Navbar from './Navbar.js';
 import EyeCatcher from './EyeCatcher.js';
+import ProductShowcase from './ProductShowcase.js';
 
 
 class App extends React.Component {
@@ -10,6 +11,7 @@ class App extends React.Component {
             <div className="App">
                 <Navbar />
                 <EyeCatcher />
+                <ProductShowcase />
             </div>
         );
     }
