@@ -13,11 +13,12 @@ export default class ProductShowcase extends Component {
             <div className="ProductShowcase">
 
                 <div className="side-space"></div>
-
+                {/* Hier abhängig von Bedingung die Reihenfolge ändern. */}
                 <div className="main-product-part">
                     <div className="product-description">
                         <p>Das ist ein Test.</p>
                     </div>
+                    {/* Hinter Schrift (und?) Marken noch abgerundetes Rechteck */}
                     <div className="product-imgs">
                         <img src={mark1} />
                         <img src={mark2} />

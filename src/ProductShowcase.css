@@ -1,27 +1,42 @@
 .ProductShowcase {
     background-image: linear-gradient(to top, rgb(7, 10, 25), rgb(8, 7, 25) 5%, rgb(20, 18, 63));
     display: flex;
-}
-
-.side-space {
-    background-color: red;
+    height: 450px;
 }
 
 .main-product-part {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: stretch;
 }
 
 .main-product-part p {
     font-family: 'Celias', sans-serif;
     color: white;
+    background-color: darkgray;
+}
+
+.product-description {
+    /* width: 500px; */
+    display: flex;
+    flex-grow: 1;
+    background-color: darkgreen;
+    align-content: stretch;
+}
+
+.product-imgs {
+    flex-grow: 1;
+    background-color: darkolivegreen;   
 }
 
 .product-imgs img {
+    background-color: red;
+    /* height: 100px; */
     animation: floating 5s linear infinite ;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     display: inline-block;
     filter: drop-shadow(3px 3px 3px cornflowerblue);
 }
@@ -29,7 +44,6 @@
 .product-imgs img:nth-child(2) {    
     animation-delay: 1.5s;
     animation: floating 8s linear infinite;
-    filter: drop-shadow(3px 3px 3px var(--brain-rain-pink));
 }
 .product-imgs img:nth-child(3) {    
     animation-delay: 3s;
