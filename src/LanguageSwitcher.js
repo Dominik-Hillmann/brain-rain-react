@@ -23,7 +23,7 @@ export default class LanguageSwitcher extends Component {
 
     switchFlag() {
         this.setState(this.state.lang === 'de' ? { lang: 'en' } : { lang: 'de' });
-
+        console.log('Current state', this.state);
     }
 
     render() {

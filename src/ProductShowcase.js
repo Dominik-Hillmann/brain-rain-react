@@ -8,6 +8,10 @@ import mark2 from './marke-2.png';
 import React, { Component } from 'react';
 
 export default class ProductShowcase extends Component {
+
+
+    // Über die props Klasse der eigentlichen Bilder mitgeben, mit denen dann die Größe 
+    // on CSS bestimmt wird.
     render() {
         return (
             <div className="ProductShowcase">
@@ -16,7 +20,11 @@ export default class ProductShowcase extends Component {
                 {/* Hier abhängig von Bedingung die Reihenfolge ändern. */}
                 <div className="main-product-part">
                     <div className="product-description">
-                        <p>Das ist ein Test.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+                            voluptua.
+                        </p>
                     </div>
                     {/* Hinter Schrift (und?) Marken noch abgerundetes Rechteck */}
                     <div className="product-imgs">

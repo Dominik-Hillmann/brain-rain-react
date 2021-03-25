@@ -1,6 +1,10 @@
 {
   "name": "brain-rain-react",
-  "version": "0.1.0",
+  "description": "The homepage of the BRAINRAIN GbR",
+  "homepage": "https://brain-rain.com",
+  "keywords" : ["website", "homepage", "react", "browser"],
+  "author": "Dominik Hillmann <brainrainshop@gmail.com> (https://dominik-hillmann.com)",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
