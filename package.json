@@ -2,7 +2,12 @@
   "name": "brain-rain-react",
   "description": "The homepage of the BRAINRAIN GbR",
   "homepage": "https://brain-rain.com",
-  "keywords" : ["website", "homepage", "react", "browser"],
+  "keywords": [
+    "website",
+    "homepage",
+    "react",
+    "browser"
+  ],
   "author": "Dominik Hillmann <brainrainshop@gmail.com> (https://dominik-hillmann.com)",
   "version": "1.0.0",
   "private": true,
@@ -13,13 +18,14 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "react-test-renderer": "^17.0.2",
     "roman-numerals": "^0.3.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --verbose ./test",
+    "test": "jest --verbose ./src",
     "eject": "react-scripts eject",
     "serve": "serve -s build"
   },

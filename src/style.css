@@ -1,5 +1,6 @@
 /* These are CSS properties that apply across more than one component. */
-:root {
+html {
+/* :root { */
     --side-space: 200px;
     --eyecatcher-height: 600px;
     --header-height: 70px;
