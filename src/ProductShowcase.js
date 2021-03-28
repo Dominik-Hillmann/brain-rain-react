@@ -1,6 +1,8 @@
 import './style.css';
 import './ProductShowcase.css';
 import React, { Component } from 'react';
+import wave from './bold-wave.png';
+
 
 export default class ProductShowcase extends Component {
     constructor(props) {
@@ -21,7 +23,7 @@ export default class ProductShowcase extends Component {
 
     render() {
         const productDescription = (
-            <div className="product-description" onClick={() => this.handleClick()}>
+            <div className="product-description">
                 <p>
                     <span className="bigger-text">{this.props.textBig}</span>
                     {this.props.textSmall}
@@ -40,12 +42,17 @@ export default class ProductShowcase extends Component {
             {productDescription}
         </>);
 
-        return (
-            <div className="ProductShowcase">
+        return (<>
+            {this.props.isWhite ? <img className="wave-1 showcase-waves" src={wave} /> : null}
+            <div className={`ProductShowcase ${this.props.isWhite ? 'is-white': ''}`}>
+
                 <div className="side-space"></div>
-                <div className="main-product-part">{productPart}</div>
+                <div className="main-product-part">
+                    {productPart}
+                </div>
                 <div className="side-space"></div>
             </div>
-        );
+            {this.props.isWhite ? <img className="wave-2 showcase-waves" src={wave} /> : null}
+        </>);
     }
 }

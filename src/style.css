@@ -9,7 +9,7 @@ html {
 
 .side-space {
     width: var(--side-space);
-    background-color: chocolate;
+    /* background-color: chocolate; */
 }
 
 /* Celias font styles. */
