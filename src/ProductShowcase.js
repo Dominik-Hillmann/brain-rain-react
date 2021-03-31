@@ -41,7 +41,7 @@ export default class ProductShowcase extends Component {
             {productImgs}
             {productDescription}
         </>);
-
+        // TODO: Button im Parameter
         return (<>
             {this.props.isWhite ? <img className="wave-1 showcase-waves" src={wave} /> : null}
             <div className={`ProductShowcase ${this.props.isWhite ? 'is-white': ''}`}>

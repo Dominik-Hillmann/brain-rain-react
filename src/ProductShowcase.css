@@ -28,6 +28,7 @@
 
 .is-white .main-product-part p {
     color: black;
+    text-align: center;
 }
 
 .product-description {
@@ -35,7 +36,7 @@
     display: flex;
     flex-grow: 1;
     flex-basis: 50%;
-    /* background-color: darkgreen; */
+    background-color: darkgreen;
     align-content: space-around;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -51,8 +52,9 @@
     margin: auto;
     margin-top: 20px;
     /* Colors */
-    background-color: transparent;
+    background-color: white;
     color: var(--brain-rain-pink);
+    filter: drop-shadow(0.5px 0.5px 0.5px var(--brain-rain-blue));
     /* Font */
     font-family: 'Celias', sans-serif;
     font-size: 15px;
@@ -65,13 +67,19 @@
 }
 
 .product-description button:hover {
-    margin-top: -5px;
+    border: 50px solid white;
 }
 
 span.bigger-text {
     font-size: 40px;
     font-family: 'Celias', sans-serif;
     /* filter: drop-shadow(0.5px 0.5px 0.5px cornflowerblue); */
+    /* width: 100%; */
+    /* width: 100px; */
+    text-align: left;
+    margin: 20px;
+    color: red;
+    display: inline-block;
 }
 
 .product-imgs {

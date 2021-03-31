@@ -16,7 +16,7 @@ export default class App extends React.Component {
                 textBig="Dog tag made out of wood with individual engraving." 
                 textSmall="Lorem ipsum loro sim allet."
                 textIsLeft={false}
-                isWhite={true}
+                isWhite={false}
             >
                 <img src={mark1} alt="A BRAINRAIN dog tag." style={{ 
                     height: "290px" 
