@@ -1,0 +1,117 @@
+footer {
+    background-color: rgb(7, 10, 25);
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#inner-footer {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-space {
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 33%;
+}
+
+.logo-space img {
+    height: 40px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.logo-space h1 {
+    font-size: 30px;
+    margin-left: 5px;
+    font-family: 'Celias';
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.law-stuff {
+    color: white;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    width: 30%
+}
+
+.social-media {
+    display: flex;
+    width: 33%;
+    justify-content: space-around;
+}
+
+.social-media img {
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#instagram:hover {
+    background: radial-gradient(
+        circle at 30% 107%, 
+        #fdf497 0%, 
+        #fdf497 5%, 
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%
+    );
+    
+}
+
+#etsy {
+    animation: etsy-hover-reverse 0.3s ease-in-out;
+}
+
+#etsy:hover {
+    background-color: #eb6d20;
+    animation: etsy-hover 0.3s ease-in-out;
+}
+
+@keyframes etsy-hover {
+    from {
+        background-color: transparent;
+    } to {
+        background-color: #eb6d20;
+    }
+}
+
+@keyframes etsy-hover-reverse {
+    from {
+        background-color: #eb6d20;
+    } to {
+        background-color: transparent;
+    }    
+}
+
+#github {
+    animation: github-hover-reverse 0.3s ease-in-out;
+}
+
+#github:hover {
+    background-color: #484f58;
+    animation: github-hover 0.3s ease-in-out;
+}
+
+@keyframes github-hover {
+    from {
+        background-color: transparent;
+    } to  {
+        background-color: #484f58;
+    }
+}
+
+@keyframes github-hover-reverse {
+    from {
+        background-color: #484f58;
+    } to {
+        background-color: transparent;
+    }    
+}

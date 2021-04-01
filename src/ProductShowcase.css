@@ -1,9 +1,8 @@
 .ProductShowcase {
     background-image: linear-gradient(to top, rgb(7, 10, 25), rgb(8, 7, 25) 5%, rgb(20, 18, 63));
     display: flex;
-    height: 450px;
+    height: 500px;
 }
-
 
 .main-product-part {
     width: 100%;
@@ -36,14 +35,14 @@
     display: flex;
     flex-grow: 1;
     flex-basis: 50%;
-    background-color: darkgreen;
     align-content: space-around;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .product-description p {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
 }
 
 .product-description button {
@@ -54,32 +53,170 @@
     /* Colors */
     background-color: white;
     color: var(--brain-rain-pink);
-    filter: drop-shadow(0.5px 0.5px 0.5px var(--brain-rain-blue));
+    filter: drop-shadow(3px 3px 3px var(--brain-rain-pink));
     /* Font */
     font-family: 'Celias', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     /* Borders */
     border: 2px solid white;
     padding: 10px;
     border-radius: 50px;
     /* Other */
     cursor: pointer;
+    animation: button-growth-reverse 0.15s ease-in-out;
+}
+
+.product-description button.is-white {
+    background-color: var(--brain-rain-pink);
+    color: white;
+    border: 2px solid var(--brain-rain-pink);
+    filter: none;
+    animation: button-growth-reverse-is-white 0.15s ease-in-out;
 }
 
 .product-description button:hover {
-    border: 50px solid white;
+    filter: drop-shadow(7px 7px 3px var(--brain-rain-pink));
+    margin-top: 12px;
+    border: 6px solid white;
+    animation: button-growth 0.1s ease-in-out;
+    font-size: 20px;
+}
+
+.product-description button.is-white:hover {
+    filter: none;
+    margin-top: 12px;
+    border: 6px solid var(--brain-rain-pink);
+    animation: button-growth-is-white 0.1s ease-in-out;
+}
+
+@keyframes button-growth {
+    0% {
+        filter: drop-shadow(3px 3px 3px var(--brain-rain-pink));
+        margin-top: 20px;
+        border: 2px solid white;
+        font-size: 17px;
+    } 100% {
+        filter: drop-shadow(7px 7px 3px var(--brain-rain-pink));
+        margin-top: 12px;
+        border: 6px solid white;
+        font-size: 20px;
+    }
+}
+
+@keyframes button-growth-reverse {
+    0% {
+        filter: drop-shadow(7px 7px 3px var(--brain-rain-pink));
+        margin-top: 12px;
+        border: 6px solid white;
+        font-size: 20px;
+    } 100% {
+        filter: drop-shadow(3px 3px 3px var(--brain-rain-pink));
+        margin-top: 20px;
+        border: 2px solid white;
+        font-size: 17px;
+    }
+}
+
+@keyframes button-growth-is-white {
+    0% {
+        margin-top: 20px;
+        border: 2px solid var(--brain-rain-pink);
+        font-size: 17px;
+    } 100% {
+        margin-top: 12px;
+        border: 6px solid var(--brain-rain-pink);
+        font-size: 20px;
+    }
+}
+
+@keyframes button-growth-reverse-is-white {
+    0% {
+        margin-top: 12px;
+        border: 6px solid var(--brain-rain-pink);
+        font-size: 20px;
+    } 100% {
+        margin-top: 20px;
+        border: 2px solid var(--brain-rain-pink);
+        font-size: 17px;
+    }
+}
+
+span {
+    margin: 0 20px 20px 20px;
+    text-align: left;
+    display: inline-block;
 }
 
 span.bigger-text {
     font-size: 40px;
     font-family: 'Celias', sans-serif;
-    /* filter: drop-shadow(0.5px 0.5px 0.5px cornflowerblue); */
-    /* width: 100%; */
-    /* width: 100px; */
-    text-align: left;
-    margin: 20px;
-    color: red;
     display: inline-block;
+}
+
+span.smaller-text {
+    text-align: justify;
+}
+
+/* Animated Emojis in headlines */
+
+span.barking-doggo {
+    animation: barking-doggo-reverse 0.5s linear;
+    /* display: inline-block; */
+    margin: none;
+    padding: none;
+    transform: translate3d(0, 0, 0);
+}
+
+span.barking-doggo:hover {
+    animation: barking-doggo 0.5s linear;
+    /* transform: translate3d(0, 0, 0); */
+    backface-visibility: hidden;
+    perspective: 1000px;
+    display: inline-block;
+}
+
+@keyframes barking-doggo {
+    0% {
+        transform: translateY(0px);
+    } 30% {
+        transform: translateY(-10px);
+    } 45% {
+        transform: translateY(8px);
+    } 60% {
+        transform: translateY(-10px);
+    } 100% {
+        transform: translateY(0px);
+    }
+}
+
+span.shaking-key {
+    animation: barking-doggo-reverse 0.5s linear;
+    /* display: inline-block; */
+    margin: none;
+    padding: none;
+    transform: translate3d(0, 0, 0);
+}
+
+span.shaking-key:hover {
+    animation: shaking-key 1s ease-in-out;
+    /* transform: translate3d(0, 0, 0); */
+    backface-visibility: hidden;
+    perspective: 1000px;
+    display: inline-block;
+}
+
+@keyframes shaking-key {
+    0% {
+        transform: rotate(0deg);
+    } 30% {
+        transform: rotate(-20deg);
+    } 45% {
+        transform: rotate(30deg);
+    } 60% {
+        transform: rotate(-25deg);
+    } 100% {
+        transform: rotate(0deg);
+    }
 }
 
 .product-imgs {
@@ -94,11 +231,11 @@ span.bigger-text {
 .product-imgs img {
     /* background-color: red; */
     /* height: 100px; IMPORTANT: defined by parameter of ProductsShowcase! */
-    animation: floating-1 10s linear infinite ;
+    animation: floating-1 10s ease-in-out infinite ;
     transform: translate3d(0, 0, 0);
     /* backface-visibility: hidden; */
     /* display: flex; */
-    filter: drop-shadow(3px 3px 3px cornflowerblue);
+    filter: drop-shadow(3px 3px 3px var(--brain-rain-blue));
 
     /* text-align: center; */
     /* justify-content: center;
@@ -111,11 +248,11 @@ span.bigger-text {
 
 .product-imgs img:nth-child(2) {    
     animation-delay: 1.5s;
-    animation: floating-2 8s linear infinite;
+    animation: floating-2 8s ease-in-out infinite;
 }
 .product-imgs img:nth-child(3) {    
     animation-delay: 3s;
-    animation: floating-1 2s linear infinite ;
+    animation: floating-1 2s ease-in-out infinite ;
 }
 
 @keyframes floating-1 {
@@ -144,24 +281,6 @@ span.bigger-text {
     } 100% { 
         transform: translateY(0px) rotate(0deg); 
     }
-}
-
-.showcase-waves {
-    /* background-image: linear-gradient(to bottom, rgb(7, 10, 25), rgb(8, 7, 25) 5%, rgb(20, 18, 63)); */
-    width: 100%;
-    height: 50px;
-    margin: 0;
-    padding: 0;    
-    filter: drop-shadow(3px 3px 3px cornflowerblue);
-}
-
-.wave-1 {
-    transform: rotate(180deg);
-    margin-top: -100px;
-}
-
-.wave-2 {
-    
 }
 
 .ProductShowcase.is-white div.side-space {

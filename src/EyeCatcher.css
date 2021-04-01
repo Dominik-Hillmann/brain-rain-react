@@ -6,21 +6,8 @@
     height: var(--eyecatcher-height);
     padding-top: 60px;
     display: block;
-    /* z-index: -100; */
 }
 
-/*  */
-/* body { z-index: -100; } */
-/* #eyecatcher {
-    background-image: linear-gradient(to bottom, rgb(7, 10, 25), rgb(8, 7, 25) 80%, rgb(20, 18, 63));
-    color: white;
-    width: 100%;
-    height: 800px;
-    padding-top: 60px;
-} */
-/* #eyecatcher > * {
-    position: absolute;
-} */
 #eyecatcher h1 {
     position: absolute;
     font-size: 120px;
@@ -85,17 +72,13 @@
 }
 
 #welcome-text-wrapper {
-    /* background-color: darkcyan; */
     position: absolute;
     z-index: 3;
-    /* width: 28%; */
     left: 0;
     text-align: left;
     margin-left: 10%;
 
     top: calc(var(--header-height) + 50px);
-    /* display: flex;
-    align-items: center; */
 }
 
 #welcome-text p {
@@ -129,7 +112,6 @@
     border-bottom: 3px var(--brain-rain-pink) solid;
     font-weight: 700;
 }
-
 
 .shaking-hand:hover {
     animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both;
