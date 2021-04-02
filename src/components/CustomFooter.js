@@ -1,5 +1,7 @@
 // Libraries
 import React from 'react';
+// Components
+import { Translation } from 'react-i18next';
 // Stylesheets
 import '../css/CustomFooter.css';
 // Images
@@ -47,9 +49,11 @@ export default class CustomFooter extends React.Component {
                         />
                     </div>
                     <div className="law-stuff">
-                        Copyright Ⓒ {new Date().getFullYear()} BRAINRAIN GbR, 
-                        Wanzleben, Saxony-Anhalt,Germany. All rights reserved.&nbsp;
-                        <a href="https://brain-rain.com/imprint">Imprint</a>.
+                        Copyright Ⓒ {new Date().getFullYear()}&nbsp;
+                        <Translation>{t => t('footer-remark')}</Translation>&nbsp;
+                        <a href="https://brain-rain.com/imprint">
+                            <Translation>{t => t('footer-imprint')}</Translation>
+                        </a>.
                     </div>
                 </div>
             <div className="side-space"></div>

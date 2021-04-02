@@ -1,5 +1,6 @@
 // Libraries
 import React, { Component } from 'react';
+import i18next from 'i18next';
 // Styles
 import '../css/style.css';
 import '../css/LanguageSwitcher.css';
@@ -23,7 +24,17 @@ export default class LanguageSwitcher extends Component {
 
     switchFlag() {
         this.setState(this.state.lang === 'de' ? { lang: 'en' } : { lang: 'de' });
-        console.log('Current state', this.state);
+    }
+
+    triggerTranslation() {
+        const currentLang = this.state.lang;
+        const transLang = currentLang === 'de' ? 'en' : 'de';
+        i18next.changeLanguage(transLang);
+    }
+
+    handleClick() {
+        this.switchFlag();
+        this.triggerTranslation();
     }
 
     render() {
@@ -31,7 +42,7 @@ export default class LanguageSwitcher extends Component {
         const backFlag = this.state.lang === 'de' ? uk : de;
         return (
             <div className="LanguageSwitcher">
-                <div id="flags-container" onClick={() => this.switchFlag()}>
+                <div id="flags-container" onClick={() => this.handleClick()}>
                     <img className="front-flag flag" src={frontFlag} alt="The front flag." />
                     <img className="back-end flag" src={backFlag} alt="The back flag." />
                 </div>

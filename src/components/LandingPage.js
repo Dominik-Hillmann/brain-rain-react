@@ -6,6 +6,7 @@ import EyeCatcher from './EyeCatcher.js';
 import ProductShowcase from './ProductShowcase.js';
 import CustomFooter from './CustomFooter.js';
 import CookieConsent from 'react-cookie-consent';
+import { Translation } from 'react-i18next';
 // Images
 import mark1 from '../img/marke-1.png';
 import mark2 from '../img/marke-2.png';
@@ -87,7 +88,7 @@ export default class LandingPage extends React.Component {
             />
             <CookieConsent
                 location="bottom"
-                buttonText="I understand."
+                buttonText={<Translation>{t => t('cookie-understand')}</Translation>}
                 cookieName="General cookies"
                 style={{ 
                     background: "black",
@@ -99,7 +100,7 @@ export default class LandingPage extends React.Component {
                     backgroundColor: 'cornflowerblue'
                 }}
             >
-                This website uses cookies to enhance the user experience, m'kay?
+                <Translation>{t => t('cookie-banner')}</Translation>&nbsp;🍪
             </CookieConsent>
         </>);
     }

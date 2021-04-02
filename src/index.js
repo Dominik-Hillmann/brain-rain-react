@@ -1,23 +1,20 @@
 // Libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { 
-    BrowserRouter,
-    BrowserRouter as Router,
-    Route,
-    Switch
-} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 // Components
 import App from './components/App';
 // Stylesheets
 import './css/index.css';
 import reportWebVitals from './reportWebVitals';
+// Translation
+import './i18n.js';
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <Router>
             <App />
-        </BrowserRouter>
+        </Router>
     </React.StrictMode>,
     document.getElementById('root')
 );

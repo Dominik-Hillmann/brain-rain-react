@@ -1,6 +1,8 @@
 // Libraries
 import React, { Component } from 'react';
 import { toRoman } from 'roman-numerals';
+// Components
+import { Translation } from 'react-i18next';
 // Stylesheets
 import '../css/style.css';
 import '../css/EyeCatcher.css';
@@ -30,15 +32,15 @@ export default class EyeCatcher extends Component {
                 <div id="welcome-text-wrapper">
                     <div id="welcome-text">
                         <p id="first-part-welcome">
-                            Hi, we are&nbsp;
-                            <span className ="brain-rain-name">BRAINRAIN</span> <span className="shaking-hand">👋</span>.
-                            We make personalized items for you
-                            or your friends and family.
+                            Hi, <Translation>{t => t('catcher-weare')}</Translation>&nbsp;
+                            <span className ="brain-rain-name">BRAINRAIN</span>
+                            <span className="shaking-hand">👋</span>.
+                            <Translation>{t => t('catcher-wemake')}</Translation>
                         </p>
                         <p id="second-part-welcome">
-                            Currently, we offer custom made wooden 
-                            key fobs and posters.
-                            Take a look at them right here <span className="pointing-hand">👇</span>.
+                            <Translation>{t => t('catcher-weoffer')}</Translation>
+                            <Translation>{t => t('catcher-takelook')}</Translation>&nbsp;
+                            <span className="pointing-hand">👇</span>.
                         </p>
                     </div>
                 </div>

@@ -23,6 +23,7 @@
     z-index: 5;
     position: relative;
     margin-bottom: 100px;
+    min-height: 500px;
 }
 
 .content {
