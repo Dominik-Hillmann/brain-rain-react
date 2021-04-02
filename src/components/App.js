@@ -1,14 +1,14 @@
-import './App.css';
+// Libraries
 import React from 'react';
+// Components 
 import Navbar from './Navbar.js';
 import EyeCatcher from './EyeCatcher.js';
 import ProductShowcase from './ProductShowcase.js';
 import CustomFooter from './CustomFooter.js';
-
 import CookieConsent from 'react-cookie-consent';
-
-import mark1 from './marke-1.png';
-import mark2 from './marke-2.png';
+// Images
+import mark1 from '../img/marke-1.png';
+import mark2 from '../img/marke-2.png';
 
 export default class App extends React.Component {
     render() {
@@ -80,7 +80,11 @@ export default class App extends React.Component {
                     marginLeft: '-40px'
                 }} />
             </ProductShowcase>
-            <CustomFooter/>
+            <CustomFooter
+                githubLink="https://github.com/Dominik-Hillmann"
+                etsyLink="https://www.etsy.com/de/shop/BRAINRAINShop"
+                instagramLink="https://www.instagram.com/charlie_fricke"
+            />
             <CookieConsent
                 location="bottom"
                 buttonText="I understand."
@@ -95,7 +99,7 @@ export default class App extends React.Component {
                     backgroundColor: 'cornflowerblue'
                 }}
             >
-                This website uses cookies to enhance the user experience.
+                This website uses cookies to enhance the user experience, m'kay?
             </CookieConsent>
         </>);
     }

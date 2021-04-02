@@ -1,8 +1,8 @@
-import './style.css';
-import './ProductShowcase.css';
+// Libraries
 import React from 'react';
-import wave from './bold-wave.png';
-
+// Stylesheets
+import '../css/style.css';
+import '../css/ProductShowcase.css';
 
 export default class ProductShowcase extends React.Component {
     constructor(props) {
@@ -20,7 +20,7 @@ export default class ProductShowcase extends React.Component {
     render() {
         const productDescription = (
             <div className="product-description">
-                <p>
+                <p style={{ marginLeft: this.props.textIsLeft ? '0px' : null }}>
                     <span className="bigger-text">
                         {this.props.textBig}
                         <span className={this.props.animatedEmojiClassName}>{this.props.animatedEmoji}</span>

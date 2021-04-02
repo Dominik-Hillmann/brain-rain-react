@@ -42,6 +42,10 @@ footer {
     width: 30%
 }
 
+.law-stuff a {
+    color: white;
+}
+
 .social-media {
     display: flex;
     width: 33%;

@@ -1,23 +1,24 @@
+// Libraries
 import React from 'react';
-
-import './CustomFooter.css';
-
-import darkBlueNegativeBrain from './logo-negative-dark-blue.png';
-import instagramLogo from './instagram.png';
-import etsyLogo from './etsy.png';
-import githubLogo from './github.png';
+// Stylesheets
+import '../css/CustomFooter.css';
+// Images
+import darkBlueNegativeBrain from '../img/logo-negative-dark-blue.png';
+import instagramLogo from '../img/instagram.png';
+import etsyLogo from '../img/etsy.png';
+import githubLogo from '../img/github.png';
 
 export default class CustomFooter extends React.Component {
     handleEtsyClick() {
-
+        window.open(this.props.etsyLink, '_blank');
     }
 
     handleInstagramClick() {
-
+        window.open(this.props.instagramLink, '_blank');
     }
 
     handleGithubClick() {
-        
+        window.open(this.props.githubLink, '_blank');
     }
 
     render() {
@@ -32,22 +33,23 @@ export default class CustomFooter extends React.Component {
                         <img 
                             id="etsy" 
                             src={etsyLogo}
-                            onClick={() => window.open('https://www.etsy.com/shop/BRAINRAINShop', '_blank')} 
+                            onClick={() => this.handleEtsyClick()} 
                         />
                         <img 
                             id="instagram" 
                             src={instagramLogo} 
-                            onClick={() => window.open('https://www.instagram.com/charlie_fricke', '_blank')}
+                            onClick={() => this.handleInstagramClick()}
                         />
                         <img 
                             id="github" 
                             src={githubLogo}
-                            onClick={() => window.open('https://github.com/Dominik-Hillmann')} 
+                            onClick={() => this.handleGithubClick()} 
                         />
                     </div>
                     <div className="law-stuff">
-                        Copyright Ⓒ {new Date().getFullYear()} BRAINRAIN GbR, Wanzleben, Germany. All rights reserved. 
-                        <a> Imprint</a>.
+                        Copyright Ⓒ {new Date().getFullYear()} BRAINRAIN GbR, 
+                        Wanzleben, Saxony-Anhalt,Germany. All rights reserved.&nbsp;
+                        <a href="https://brain-rain.com/imprint">Imprint</a>.
                     </div>
                 </div>
             <div className="side-space"></div>

@@ -1,13 +1,13 @@
-import './style.css';
-import './Navbar.css';
-import logo from './brain-rain-logo.png';
+// Libraries
+import React, { Component } from 'react';
 // Components
 import LanguageSwitcher from './LanguageSwitcher.js';
-// Library
-import React, { Component } from 'react';
+// Stylesheets
+import '../css/style.css';
+import '../css/Navbar.css';
+import logo from '../img/brain-rain-logo.png';
 
 export default class Navbar extends Component {
-
     onPressEtsyShopItem () {
         window.open('https://www.etsy.com/de/shop/BRAINRAINShop', '_blank'); 
     }

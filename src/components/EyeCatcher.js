@@ -1,12 +1,13 @@
-import './style.css';
-import './EyeCatcher.css';
-
-import background from './background-eyecatcher.png';
-import brainAnimation from './burton.gif';
-import negativeLogo from './logo-negative-dark-blue.png'
-
+// Libraries
 import React, { Component } from 'react';
 import { toRoman } from 'roman-numerals';
+// Stylesheets
+import '../css/style.css';
+import '../css/EyeCatcher.css';
+// Images
+import background from '../img/background-eyecatcher.png';
+import brainAnimation from '../img/burton.gif';
+import negativeLogo from '../img/logo-negative-dark-blue.png'
 
 export default class EyeCatcher extends Component {
     onScrollToFirstProduct() {

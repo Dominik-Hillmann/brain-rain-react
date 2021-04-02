@@ -1,11 +1,11 @@
-// Styles
-import './style.css';
-import './LanguageSwitcher.css';
-// Images
-import uk from './uk.png';
-import de from './de.png';
-// Library
+// Libraries
 import React, { Component } from 'react';
+// Styles
+import '../css/style.css';
+import '../css/LanguageSwitcher.css';
+// Images
+import uk from '../img/uk.png';
+import de from '../img/de.png';
 
 /**
  * @class Controles the language used on the website.

@@ -1,6 +1,5 @@
 /* These are CSS properties that apply across more than one component. */
-html {
-/* :root { */
+:root {
     --side-space: 200px;
     --eyecatcher-height: 600px;
     --header-height: 70px;
@@ -16,9 +15,9 @@ html {
 /* Celias font styles. */
 @font-face {
     font-family: 'Celias';
-    src: url('./fonts/Celias-Black.woff2') format('woff2'),
-        url('./fonts/Celias-Black.woff') format('woff'),
-        url('./fonts/Celias-Black.ttf') format('truetype');
+    src: url('../fonts/Celias-Black.woff2') format('woff2'),
+        url('../fonts/Celias-Black.woff') format('woff'),
+        url('../fonts/Celias-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -26,9 +25,9 @@ html {
 
 @font-face {
     font-family: 'Celias';
-    src: url('./fonts/Celias-Bold.woff2') format('woff2'),
-        url('./fonts/Celias-Bold.woff') format('woff'),
-        url('./fonts/Celias-Bold.ttf') format('truetype');
+    src: url('../fonts/Celias-Bold.woff2') format('woff2'),
+        url('../fonts/Celias-Bold.woff') format('woff'),
+        url('../fonts/Celias-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -36,9 +35,9 @@ html {
 
 @font-face {
     font-family: 'Celias';
-    src: url('./fonts/Celias-Medium.woff2') format('woff2'),
-        url('./fonts/Celias-Medium.woff') format('woff'),
-        url('./fonts/Celias-Medium.ttf') format('truetype');
+    src: url('../fonts/Celias-Medium.woff2') format('woff2'),
+        url('../fonts/Celias-Medium.woff') format('woff'),
+        url('../fonts/Celias-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
