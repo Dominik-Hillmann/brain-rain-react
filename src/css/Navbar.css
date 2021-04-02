@@ -2,8 +2,8 @@ header {
     display: flex;
     justify-content: space-between;
     height: 70px; /* Höhe Header. */
-
-    /* z-index: 5 !important; */
+    position: relative;
+    z-index: 5 !important;
 }
 
 .Navbar {

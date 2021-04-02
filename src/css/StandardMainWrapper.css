@@ -1,0 +1,31 @@
+.standard-main-wrapper-wrapper {
+    background-image: var(--dark-blue-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.standard-main-wrapper-wrapper img {
+    width: 100%;
+    filter: drop-shadow(3px 3px 3px var(--brain-rain-blue));
+    position: relative;
+    z-index: 4;
+    margin-bottom: -20%;
+}
+
+.content-wrapper {
+    background-color: white;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 0px 4px gray);
+    z-index: 5;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.content {
+    text-align: justify;
+    margin: 70px;
+}
