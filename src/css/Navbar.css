@@ -33,6 +33,7 @@ header {
 
 #menu-items p span {
     margin-left: 5px;
+    margin-bottom: 0px;
     cursor: pointer;
 }
 

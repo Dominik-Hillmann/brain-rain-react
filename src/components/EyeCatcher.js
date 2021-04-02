@@ -12,10 +12,6 @@ import brainAnimation from '../img/burton.gif';
 import negativeLogo from '../img/logo-negative-dark-blue.png'
 
 export default class EyeCatcher extends Component {
-    onScrollToFirstProduct() {
-        console.log('IMPLEMENTIERE MICH.');
-    }
-
     render() {
         return (
             <div className="EyeCatcher" id="eyecatcher">
@@ -32,15 +28,19 @@ export default class EyeCatcher extends Component {
                 <div id="welcome-text-wrapper">
                     <div id="welcome-text">
                         <p id="first-part-welcome">
-                            Hi, <Translation>{t => t('catcher-weare')}</Translation>&nbsp;
-                            <span className ="brain-rain-name">BRAINRAIN</span>
-                            <span className="shaking-hand">👋</span>.
+                            <nobr> 
+                                Hi, <Translation>{t => t('catcher-weare')}</Translation>&nbsp;
+                                <span className ="brain-rain-name">BRAINRAIN</span>&nbsp;
+                                <span className="shaking-hand">👋</span>.&nbsp;
+                            </nobr>
                             <Translation>{t => t('catcher-wemake')}</Translation>
                         </p>
                         <p id="second-part-welcome">
-                            <Translation>{t => t('catcher-weoffer')}</Translation>
-                            <Translation>{t => t('catcher-takelook')}</Translation>&nbsp;
-                            <span className="pointing-hand">👇</span>.
+                            <Translation>{t => t('catcher-weoffer')}</Translation>&nbsp;
+                            <nobr>
+                                <Translation>{t => t('catcher-takelook')}</Translation>&nbsp;
+                                <span className="pointing-hand">👇</span>.
+                            </nobr>
                         </p>
                     </div>
                 </div>

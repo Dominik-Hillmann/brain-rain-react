@@ -66,7 +66,7 @@ const resources = {
                 'wemake': `Wir stellen personalisierte Anhänger für
                 dich oder deine Freunde her.`,
                 'weoffer': `Derzeit bieten wir maßgefertigte Anhänger 
-                aus Holz und Poster an.`,
+                aus Holz sowie Poster an.`,
                 'takelook': 'Schau sie dir gerne an'
             }
         }

@@ -106,10 +106,14 @@
     width: 600px;
 }
 
-#welcome-text p > span.brain-rain-name {
+#welcome-text p span {
+    margin: 0;
+}
+
+#welcome-text p span.brain-rain-name {
     font-family: 'Celias', serif;
-    border-top: 3px var(--brain-rain-pink) solid;
-    border-bottom: 3px var(--brain-rain-pink) solid;
+    border-top: 3px solid var(--brain-rain-pink);
+    border-bottom: 3px solid var(--brain-rain-pink);
     font-weight: 700;
 }
 
