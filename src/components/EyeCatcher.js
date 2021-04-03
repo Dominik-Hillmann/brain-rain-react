@@ -37,8 +37,9 @@ export default class EyeCatcher extends Component {
                         </p>
                         <p id="second-part-welcome">
                             <Translation>{t => t('catcher-weoffer')}</Translation>&nbsp;
+                            <Translation>{t => t('catcher-takelook1')}</Translation>&nbsp;
                             <nobr>
-                                <Translation>{t => t('catcher-takelook')}</Translation>&nbsp;
+                                <Translation>{t => t('catcher-takelook2')}</Translation>&nbsp;
                                 <span className="pointing-hand">👇</span>.
                             </nobr>
                         </p>

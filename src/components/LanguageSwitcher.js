@@ -22,19 +22,30 @@ export default class LanguageSwitcher extends Component {
         this.state = { lang: props.startLang };
     }
 
+    /**
+     * Switches the sources of the flag images.
+     * It changes the state causing the component to re-render.
+     */
     switchFlag() {
         this.setState(this.state.lang === 'de' ? { lang: 'en' } : { lang: 'de' });
     }
 
+    /**
+     * Triggers the language change in the website by calling
+     * `i18next`.
+     */
     triggerTranslation() {
         const currentLang = this.state.lang;
         const transLang = currentLang === 'de' ? 'en' : 'de';
         i18next.changeLanguage(transLang);
     }
 
+    /**
+     * What happens when the component gets clicked.
+     */
     handleClick() {
-        this.switchFlag();
         this.triggerTranslation();
+        this.switchFlag();
     }
 
     render() {

@@ -1,4 +1,9 @@
+// Libraries
 import React from "react";
+// Stylesheets
+import '../css/ErrorPage.css';
+// Images
+import '../img/brain-rain-logo.png';
 
 export default class ErrorPage extends React.Component {
     render() {

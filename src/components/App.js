@@ -8,12 +8,12 @@ import ErrorPage from './ErrorPage.js';
 
 export default class App extends React.Component {
     render() {
-        return (<>
+        return (
             <Switch>
                 <Route path="/" component={LandingPage} exact />
                 <Route path="/imprint" component={Imprint} />
                 <Route component={ErrorPage} />
             </Switch>
-        </>);
+        );
     }
 }

@@ -2,12 +2,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 70px; /* Höhe Header. */
-    position: relative;
-    z-index: 5 !important;
-}
-
-.Navbar {
-    /* z-index: 5 !important; */
 }
 
 #logo-wrapper {
@@ -62,8 +56,6 @@ header {
     padding-bottom: 2px solid white;
     border-bottom: 3px var(--brain-rain-pink) solid; */
 }
-
-
 
 #menu-items p:hover {
     border-top: 2px solid var(--brain-rain-pink);

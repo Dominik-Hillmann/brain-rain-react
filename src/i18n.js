@@ -7,7 +7,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// The translations
 const resources = {
     en: {
         translation: {
@@ -35,7 +34,8 @@ const resources = {
                 and family.`,
                 'weoffer': `Currently, we offer custom made wooden 
                 key fobs and posters.`,
-                'takelook': 'Take a look at them right here'
+                'takelook1': 'Take a look at',
+                'takelook2': 'them right here'
             }
         }
     },
@@ -67,7 +67,8 @@ const resources = {
                 dich oder deine Freunde her.`,
                 'weoffer': `Derzeit bieten wir maßgefertigte Anhänger 
                 aus Holz sowie Poster an.`,
-                'takelook': 'Schau sie dir gerne an'
+                'takelook1': 'Schau sie dir',
+                'takelook2': 'gerne an'
             }
         }
     }
