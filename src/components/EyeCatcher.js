@@ -10,12 +10,13 @@ import '../css/EyeCatcher.css';
 import background from '../img/background-eyecatcher.png';
 import brainAnimation from '../img/burton.gif';
 import negativeLogo from '../img/logo-negative-dark-blue.png'
+import mobileWave from '../img/bold-wave.png';
 
 export default class EyeCatcher extends Component {
     render() {
         return (
             <div className="EyeCatcher" id="eyecatcher">
-                <div className="side-space"><p>s</p></div>
+                <div className="side-space"></div>
                 <img 
                     src={negativeLogo} 
                     id="eyecatcher-logo" 
@@ -45,12 +46,12 @@ export default class EyeCatcher extends Component {
                         </p>
                     </div>
                 </div>
-                <img 
-                    id="welcome-text-wave" 
-                    src="./img/thin_wave.png" 
-                    onDragStart={() => false} 
-                    alt="The background to the main eye catcher of the landing page."    
-                /> 
+                <img
+                    id="eyecatcher-background-mobile"
+                    src={mobileWave}
+                    onDragStart={() => false}
+                    alt="The background to the main eye catcher on mobile devices."
+                />
                 <img 
                     id="eyecatcher-background" 
                     src={background}
