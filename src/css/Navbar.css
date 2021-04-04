@@ -95,59 +95,38 @@ and (max-device-width : 1024px) {
 /* Styles */
 }
 
-/* iPhone 6, 7, 8 ----------- */
+/* iPhone 6, 7, 8 */
 @media only screen 
 and (min-device-width: 375px) 
-and (max-device-height: 667px) 
-/* and (orientation : landscape)  */
-and (-webkit-device-pixel-ratio: 2) {
+and (max-device-height: 667px)
+and (-webkit-device-pixel-ratio: 2),
+/* iPhone 6+, 7+, 8+ */
+only screen 
+and (min-device-width: 414px) 
+and (max-device-height: 736px) 
+and (-webkit-device-pixel-ratio: 2),
+/* iPhone X  */
+only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 812px)
+and (-webkit-device-pixel-ratio: 3),
+/* Non-iPhone small screens */
+only screen 
+and (max-device-width: 832px) {
+    .bm-burger-button {
+        visibility: visible !important;
+    }
+
     #logo-wrapper {
-        visibility: hidden;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #menu-items {
+        visibility: collapse;
     }
 
     .side-space {
-        visibility: hidden;
+        visibility: collapse;
     }
-}
-
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-height: 667px) 
-and (orientation : portrait) 
-and (-webkit-device-pixel-ratio: 2) {
-/* Styles */
-}
-
-/* iPhone 6+, 7+, 8+ ----------- */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-height: 736px) 
-and (orientation : landscape) 
-and (-webkit-device-pixel-ratio: 2) {
-/* Styles */
-}
-
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-height: 736px) 
-and (orientation : portrait) 
-and (-webkit-device-pixel-ratio: 2) {
-/* Styles */
-}
-
-/* iPhone X ----------- */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-height: 812px) 
-and (orientation : landscape) 
-and (-webkit-device-pixel-ratio: 3) {
-/* Styles */
-}
-
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-height: 812px) 
-and (orientation : portrait) 
-and (-webkit-device-pixel-ratio: 3) {
-    /* Styles */
 }

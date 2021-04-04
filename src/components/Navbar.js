@@ -2,16 +2,26 @@
 import React, { Component } from 'react';
 // Components
 import LanguageSwitcher from './LanguageSwitcher.js';
-import { Translation } from 'react-i18next';
+import { Trans, Translation } from 'react-i18next';
+import { stack as BurgerMenu } from 'react-burger-menu';
 // Stylesheets
 import '../css/style.css';
 import '../css/Navbar.css';
+import '../css/BurgerButton.css';
 import logo from '../img/brain-rain-logo.png';
 
 /**
  * @class The navigation bar of the website.
  */
 export default class Navbar extends Component {
+    constructor() {
+        super();
+        this.aboutSymbol = '💁‍♂️';
+        this.contactSymbol = '✍️';
+        this.productsSymbol = '✨';
+        this.etsySymbol = '🏬';
+    }
+
     /**
      * What happens when clicking on the Etsy menu item.
      * Opens the BRAINRAIN shop on Etsy.
@@ -60,29 +70,51 @@ export default class Navbar extends Component {
     render() {
         return (
             <header>
+                <BurgerMenu>
+                    <span>
+                        <LanguageSwitcher startLang="en" />
+                    </span>
+                    <span onClick={() => this.handlePressAboutItem()}>
+                        {this.aboutSymbol}&nbsp;&nbsp;&nbsp;
+                        <Translation>{t => t('navbar-about')}</Translation>
+                    </span>
+                    <span onClick={() => this.handlePressProductsItem()}>
+                        {this.productsSymbol}&nbsp;&nbsp;&nbsp;
+                        <Translation>{t => t('navbar-products')}</Translation>
+                    </span>
+                    <span onClick={() => this.handlePressContactItem()}>
+                        {this.contactSymbol}&nbsp;&nbsp;&nbsp;
+                        <Translation>{t => t('navbar-contact')}</Translation>
+                    </span>
+                    <span onClick={() => this.handlePressEtsyShopItem()}>
+                        {this.etsySymbol}&nbsp;&nbsp;&nbsp;
+                        <Translation>{t => t('navbar-etsy')}</Translation>
+                    </span>
+                </BurgerMenu>
                 <div id="logo-wrapper" className="side-space">
                     <img src={logo} alt="The BRAINRAIN logo." />
                 </div>
                 <div id="menu-items">
                     <p>
-                        💁‍♂️
+                        {this.aboutSymbol}
                         <span onClick={() => this.handlePressAboutItem()}>
                         <Translation>{t => t('navbar-about')}</Translation>
-                    </span></p>
+                    </span>
+                    </p>
                     <p>
-                        ✨
+                        {this.productsSymbol}
                         <span onClick={() => this.handlePressProductsItem()}>
                             <Translation>{t => t('navbar-products')}</Translation>
                         </span>
                     </p>
                     <p>
-                        ✍️
+                        {this.contactSymbol}
                         <span onClick={() => this.handlePressContactItem()}>
                             <Translation>{t => t('navbar-contact')}</Translation>
                         </span>
                     </p>
                     <p>
-                        🏬
+                        {this.etsySymbol}
                         <span onClick={() => this.handlePressEtsyShopItem()}>
                             <Translation>{t => t('navbar-etsy')}</Translation>
                         </span>

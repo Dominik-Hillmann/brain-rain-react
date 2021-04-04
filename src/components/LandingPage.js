@@ -15,7 +15,7 @@ export default class LandingPage extends React.Component {
     render() {
         return (<>
             <Navbar />
-            <EyeCatcher />
+            {/* <EyeCatcher />
             <ProductShowcase
                 textBig="Wooden dog tag with individual engraving." 
                 textSmall={`If you are still looking for a beautiful dog tag you
@@ -101,7 +101,7 @@ export default class LandingPage extends React.Component {
                 }}
             >
                 <Translation>{t => t('cookie-banner')}</Translation>&nbsp;🍪
-            </CookieConsent>
+            </CookieConsent> */}
         </>);
     }
 }
