@@ -1,7 +1,7 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
     visibility: hidden; 
-    position: fixed;
+    position: absolute;
     width: 50px;
     height: calc(var(--header-height) / 3);
     left: 10px;
@@ -43,7 +43,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
     background: var(--dark-blue-gradient);
     padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+    font-size: 1.5em;
     font-family: 'Celias', sans-serif;
 }
 

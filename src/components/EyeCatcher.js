@@ -34,6 +34,7 @@ export default class EyeCatcher extends Component {
                                 <span className ="brain-rain-name">BRAINRAIN</span>&nbsp;
                                 <span className="shaking-hand">👋</span>.&nbsp;
                             </nobr>
+                            <wbr />{/* It didn't want to break here at first. */}
                             <Translation>{t => t('catcher-wemake')}</Translation>
                         </p>
                         <p id="second-part-welcome">

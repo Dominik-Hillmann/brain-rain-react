@@ -287,3 +287,55 @@ span.shaking-key:hover {
 .ProductShowcase.is-white div.side-space {
     background-color: white;
 }
+
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 667px)
+and (-webkit-device-pixel-ratio: 2),
+/* iPhone 6+, 7+, 8+ */
+only screen 
+and (min-device-width: 414px) 
+and (max-device-height: 736px) 
+and (-webkit-device-pixel-ratio: 2),
+/* iPhone X  */
+only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 812px)
+and (-webkit-device-pixel-ratio: 3),
+/* Non-iPhone small screens */
+only screen 
+and (max-device-width: 1024px) {
+    .main-product-part {
+        flex-direction: column;
+    }
+
+    .product-description p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightsalmon;
+        align-self: center;
+    }
+    .product-description span {
+        margin: 0;
+    }
+
+    .product-description span.bigger-text {
+        font-size: 45px;
+    }
+
+    .product-description span.smaller-text {
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-description button {
+        font-size: 25px;
+    }
+
+    .product-imgs img {
+        height: 50px;
+    }
+}
