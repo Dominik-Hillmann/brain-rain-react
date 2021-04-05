@@ -119,3 +119,44 @@ footer {
         background-color: transparent;
     }    
 }
+
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 667px)
+and (-webkit-device-pixel-ratio: 2),
+/* iPhone 6+, 7+, 8+ */
+only screen 
+and (min-device-width: 414px) 
+and (max-device-height: 736px) 
+and (-webkit-device-pixel-ratio: 2),
+/* iPhone X  */
+only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 812px)
+and (-webkit-device-pixel-ratio: 3),
+/* Non-iPhone small screens */
+only screen 
+and (max-device-width: 1024px) {
+    footer {
+        width: 100%;
+    }
+
+    #inner-footer {
+        flex-direction: column;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .logo-space {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .law-stuff {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}

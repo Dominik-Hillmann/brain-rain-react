@@ -312,9 +312,8 @@ and (max-device-width: 1024px) {
 
     .product-description p {
         width: 90%;
-        margin-left: auto;
+        margin-left: auto !important; /* Set in the component. */
         margin-right: auto;
-        background-color: lightsalmon;
         align-self: center;
     }
     .product-description span {
@@ -337,5 +336,6 @@ and (max-device-width: 1024px) {
 
     .product-imgs img {
         height: 50px;
+        margin-bottom: 30px;
     }
 }

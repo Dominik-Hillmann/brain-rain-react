@@ -14,7 +14,9 @@ const bubbles = () => {
     // parent of the bubbles
     // let eyeCatcherNode = document.querySelector('.EyeCatcher')[0];
     const eyeCatcherNode = document.getElementById('eyecatcher');
-    console.log(eyeCatcherNode);
+    if (eyeCatcherNode === null) {
+        return;
+    }
     
     function bubbleAnimation() {
         let numBubbles = getRand(1, 4, true);

@@ -39,7 +39,7 @@ export default class LandingPage extends React.Component {
                     marginLeft: '-40px'
                 }} />
             </ProductShowcase>
-            {/* <ProductShowcase
+            <ProductShowcase
                 textBig="Wooden personalized key fob." 
                 textSmall={`You can choose the engraving on each of the four
                 sides`}
@@ -101,7 +101,7 @@ export default class LandingPage extends React.Component {
                 }}
             >
                 <Translation>{t => t('cookie-banner')}</Translation>&nbsp;🍪
-            </CookieConsent> */}
+            </CookieConsent>
         </>);
     }
 }

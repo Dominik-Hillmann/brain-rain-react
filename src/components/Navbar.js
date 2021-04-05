@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // Components
 import LanguageSwitcher from './LanguageSwitcher.js';
-import { Trans, Translation } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { stack as BurgerMenu } from 'react-burger-menu';
 // Stylesheets
 import '../css/style.css';
@@ -48,10 +48,17 @@ export default class Navbar extends Component {
      */
     handlePressProductsItem() {
         const firstProductShowcase = document.querySelector('.product-description');
-        firstProductShowcase.scrollIntoView({
-            block: 'start',
-            behavior: 'smooth'
-        });
+        try {
+            firstProductShowcase.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
+        } catch (e) {
+            if (e instanceof TypeError) {
+                // The product is not on this page.
+                window.open(window.location.origin);
+            }
+        }
     }
 
     /**
@@ -60,13 +67,19 @@ export default class Navbar extends Component {
      */
     handlePressAboutItem() {
         const eyeCatcher = document.querySelector('#eyecatcher');
-        eyeCatcher.scrollIntoView({
-            block: 'start',
-            behavior: 'smooth'
-        });
+        try {
+            eyeCatcher.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
+        } catch (e) {
+            if (e instanceof TypeError) {
+                // About is not on this page, navigate to landing page.
+                window.open(window.location.origin);
+            }
+        }
     }
 
-    
     render() {
         return (
             <header>
