@@ -51,7 +51,7 @@ export default class CustomFooter extends React.Component {
                     <div className="law-stuff">
                         Copyright Ⓒ {new Date().getFullYear()}&nbsp;
                         <Translation>{t => t('footer-remark')}</Translation>&nbsp;
-                        <a href="https://brain-rain.com/imprint">
+                        <a href={`${window.location.origin}/imprint`}>
                             <Translation>{t => t('footer-imprint')}</Translation>
                         </a>.
                     </div>

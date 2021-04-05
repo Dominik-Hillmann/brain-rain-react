@@ -7,7 +7,7 @@ import '../css/ProductShowcase.css';
 export default class ProductShowcase extends React.Component {
     constructor(props) {
         super(props);
-        const atLeastOneImg = this.props.children.length >= 1;
+        const atLeastOneImg = this.props.children.length > 0;
         if (!atLeastOneImg) {
             throw new TypeError('ProductShowcase needs at least one image.');
         }
@@ -22,7 +22,7 @@ export default class ProductShowcase extends React.Component {
             <div className="product-description">
                 <p style={{ marginLeft: this.props.textIsLeft ? '0px' : null }}>
                     <span className="bigger-text">
-                        {this.props.textBig}
+                        {this.props.textBig}&nbsp;
                         <span className={this.props.animatedEmojiClassName}>{this.props.animatedEmoji}</span>
                     </span>
                     <span className="smaller-text">

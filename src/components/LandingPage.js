@@ -6,7 +6,7 @@ import EyeCatcher from './EyeCatcher.js';
 import ProductShowcase from './ProductShowcase.js';
 import CustomFooter from './CustomFooter.js';
 import CookieConsent from 'react-cookie-consent';
-import { Translation } from 'react-i18next';
+import { Trans, Translation } from 'react-i18next';
 // Images
 import mark1 from '../img/marke-1.png';
 import mark2 from '../img/marke-2.png';
@@ -17,14 +17,9 @@ export default class LandingPage extends React.Component {
             <Navbar />
             <EyeCatcher />
             <ProductShowcase
-                textBig="Wooden dog tag with individual engraving." 
-                textSmall={`If you are still looking for a beautiful dog tag you
-                    have come to the right place. Our dog tags (diameter 3.5 cm)
-                    are made of wood into which we engrave the symbol of your
-                    choice. Afterwards, we treat the tags with linseed oil to
-                    make it resistent to water and also make them easier to clean.
-                    The oil is in no way harmful for your dog.`}
-                buttonText="To the shop!"
+                textBig={<Translation>{t => t('product1-title')}</Translation>} 
+                textSmall={<Translation>{t => t('product1-text')}</Translation>}
+                buttonText={<Translation>{t => t('product1-button')}</Translation>}
                 animatedEmoji="🐕"
                 animatedEmojiClassName="barking-doggo"
                 buttonLink="https://www.etsy.com/de/listing/737720303/hundemarke-aus-holz-mit-individueller?ref=listings_manager_grid"
@@ -40,10 +35,9 @@ export default class LandingPage extends React.Component {
                 }} />
             </ProductShowcase>
             <ProductShowcase
-                textBig="Wooden personalized key fob." 
-                textSmall={`You can choose the engraving on each of the four
-                sides`}
-                buttonText="You've enchanted me."
+                textBig={<Translation>{t => t('product2-title')}</Translation>} 
+                textSmall={<Translation>{t => t('product2-text')}</Translation>}
+                buttonText={<Translation>{t => t('product2-button')}</Translation>}
                 animatedEmoji="🔑"
                 animatedEmojiClassName="shaking-key"
                 buttonLink="https://www.etsy.com/de/listing/737720303/hundemarke-aus-holz-mit-individueller?ref=listings_manager_grid"
@@ -59,16 +53,11 @@ export default class LandingPage extends React.Component {
                 }} />
             </ProductShowcase>
             <ProductShowcase
-                textBig="Wooden dog tag with individual engraving." 
-                textSmall={`If you are still looking for a beautiful dog tag you
-                    have come to the right place. Our dog tags (diameter 3.5 cm)
-                    are made of wood into which we engrave the symbol of your
-                    choice. Afterwards, we treat the tags with linseed oil to
-                    make it resistent to water and also make them easier to clean.
-                    The oil is in no way harmful for your dog.`}
-                buttonText="To the shop!"
-                animatedEmoji="🐕"
-                animatedEmojiClassName="barking-doggo"
+                textBig={<Translation>{t => t('product3-title')}</Translation>}
+                textSmall={<Translation>{t => t('product3-text')}</Translation>}
+                buttonText={<Translation>{t => t('product3-button')}</Translation>}
+                animatedEmoji="🎵"
+                animatedEmojiClassName="shaking-key"
                 buttonLink="https://www.etsy.com/de/listing/737720303/hundemarke-aus-holz-mit-individueller?ref=listings_manager_grid"
                 textIsLeft={true}
                 isWhite={false}

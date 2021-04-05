@@ -27,7 +27,7 @@ export default class Imprint extends React.Component {
                 </p>
                 <h3>Verantwortliche</h3>
                 <p>
-                    <span class="tsmcontroller">
+                    <span className="tsmcontroller">
                         BRAINRAIN GbR<br />
                         Heinrich-Heine-Weg 17<br />
                         39164 Stadt Wanzleben-Börde<br />
@@ -336,7 +336,7 @@ export default class Imprint extends React.Component {
                 <br />
                 <h3>Kontaktaufnahme</h3>
                 <p>
-                    <span class="ts-muster-content">
+                    <span className="ts-muster-content">
                         Bei der Kontaktaufnahme mit uns (z.B. per 
                         Kontaktformular, E-Mail, Telefon oder via 
                         sozialer Medien) werden die Angaben des Nutzers 
@@ -359,7 +359,7 @@ export default class Imprint extends React.Component {
                 <br />
                 <h3>Google Analytics</h3>
                 <p>
-                    <span class="ts-muster-content">
+                    <span className="ts-muster-content">
                         Wir setzen auf Grundlage unserer berechtigten Interessen 
                         (d.h. Interesse an der Analyse, Optimierung und 
                         wirtschaftlichem Betrieb unseres Onlineangebotes 
