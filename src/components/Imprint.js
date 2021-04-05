@@ -7,6 +7,9 @@ import StandardMainWrapper from './StandardMainWrapper.js';
 // Stylesheets
 import '../css/Imprint.css';
 
+/**
+ * @class The imprint all German websites need to have.
+ */
 export default class Imprint extends React.Component {
     render() {
         return (<>

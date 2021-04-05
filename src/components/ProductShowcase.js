@@ -4,6 +4,10 @@ import React from 'react';
 import '../css/style.css';
 import '../css/ProductShowcase.css';
 
+/**
+ * @class A group of images paired with a text and a call to action.
+ * The images should be cut out due to the 'floating' effect.
+ */
 export default class ProductShowcase extends React.Component {
     constructor(props) {
         super(props);
@@ -13,6 +17,9 @@ export default class ProductShowcase extends React.Component {
         }
     }
 
+    /**
+     * What happens when the buy button at the end of the text gets pressed.
+     */
     handlePressBuyButton() {
         window.open(this.props.buttonLink, '_blank');
     }

@@ -6,11 +6,14 @@ import EyeCatcher from './EyeCatcher.js';
 import ProductShowcase from './ProductShowcase.js';
 import CustomFooter from './CustomFooter.js';
 import CookieConsent from 'react-cookie-consent';
-import { Trans, Translation } from 'react-i18next';
+import { Translation } from 'react-i18next';
 // Images
 import mark1 from '../img/marke-1.png';
 import mark2 from '../img/marke-2.png';
 
+/**
+ * @class Represents the landing page as a whole.
+ */
 export default class LandingPage extends React.Component {
     render() {
         return (<>

@@ -6,6 +6,9 @@ import LandingPage from './LandingPage.js';
 import Imprint from './Imprint.js';
 import ErrorPage from './ErrorPage.js';
 
+/**
+ * @class Represents the website as a whole.
+ */
 export default class App extends React.Component {
     render() {
         return (
