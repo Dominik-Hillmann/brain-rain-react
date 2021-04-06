@@ -40,7 +40,7 @@ export default class CustomFooter extends React.Component {
             <div className="side-space"></div>
                 <div id="inner-footer">
                     <div className="logo-space">
-                        <img src={darkBlueNegativeBrain} />
+                        <img src={darkBlueNegativeBrain} alt="BRAINRAIN logo" />
                         <h1>BRAINRAIN</h1>
                     </div>
                     <div className="social-media">
@@ -48,16 +48,19 @@ export default class CustomFooter extends React.Component {
                             id="etsy" 
                             src={etsyLogo}
                             onClick={() => this.handleEtsyClick()} 
+                            alt="Etsy logo"
                         />
                         <img 
                             id="instagram" 
                             src={instagramLogo} 
                             onClick={() => this.handleInstagramClick()}
+                            alt="Instagram logo"
                         />
                         <img 
                             id="github" 
                             src={githubLogo}
-                            onClick={() => this.handleGithubClick()} 
+                            onClick={() => this.handleGithubClick()}
+                            alt="GitHub logo"
                         />
                     </div>
                     <div className="law-stuff">

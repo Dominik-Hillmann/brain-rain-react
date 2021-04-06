@@ -39,7 +39,7 @@ footer {
     color: white;
     text-align: right;
     font-family: 'Open Sans', sans-serif;
-    width: 30%
+    width: 33%
 }
 
 .law-stuff a {
@@ -48,26 +48,54 @@ footer {
 
 .social-media {
     display: flex;
-    width: 33%;
+    /* width: 33%; */
     justify-content: space-around;
+    align-self: center;
 }
 
 .social-media img {
     height: 50px;
     border-radius: 100%;
     cursor: pointer;
+    margin: 0 40px 0 40px;
+}
+
+#instagram {
+    animation: instagram-hover 0.3s ease-in-out;
 }
 
 #instagram:hover {
     background: radial-gradient(
         circle at 30% 107%, 
-        #fdf497 0%, 
-        #fdf497 5%, 
-        #fd5949 45%,
-        #d6249f 60%,
-        #285AEB 90%
+        rgba(253, 244, 151, 1.0) 0%, 
+        rgba(253, 244, 151, 1.0) 5%, 
+        rgba(253, 89, 73, 1.0) 45%,
+        rgba(214, 36, 159, 1.0) 60%,
+        rgba(40, 90, 235, 1.0) 90%
     );
-    
+}
+
+@keyframes instagram-hover {
+    from {
+        background: transparent;
+        /* background: radial-gradient(
+            circle at 30% 107%, 
+            rgba(253, 244, 151, 0.0) 0%, 
+            rgba(253, 244, 151, 0.0) 5%, 
+            rgba(253, 89, 73, 0.0) 45%,
+            rgba(214, 36, 159, 0.0) 60%,
+            rgba(40, 90, 235, 0.0) 90%
+        ); */
+    } to {
+        background: radial-gradient(
+            circle at 30% 107%, 
+            rgba(253, 244, 151, 1.0) 0%, 
+            rgba(253, 244, 151, 1.0) 5%, 
+            rgba(253, 89, 73, 1.0) 45%,
+            rgba(214, 36, 159, 1.0) 60%,
+            rgba(40, 90, 235, 1.0) 90%
+        );
+    }
 }
 
 #etsy {
