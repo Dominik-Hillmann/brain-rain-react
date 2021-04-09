@@ -15,8 +15,14 @@ export default class ErrorPage extends React.Component {
      */
     getUrlWithoutRoute() {
         const locationParts = window.location.href.split('/');
-        const domain = locationParts[2];
-        return `https://${domain}`;
+        const domain = `http://${locationParts[2]}`;
+        // Good practice to choose URL based on input instead of modifying URL.
+        // Otherwise this could lead to redirection to malicious websites.
+        if (domain === 'http://localhost:3000') {
+            return domain;
+        } else {
+            return 'http://brain-rain.com';
+        }
     }
 
     render() {

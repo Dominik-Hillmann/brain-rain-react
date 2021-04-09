@@ -27,7 +27,9 @@ export default class LanguageSwitcher extends Component {
      * It changes the state causing the component to re-render.
      */
     switchFlag() {
-        this.setState(this.state.lang === 'de' ? { lang: 'en' } : { lang: 'de' });
+        this.setState(prevState => ({
+            lang: prevState.lang === 'de' ? 'en' : 'de'
+        }));    
     }
 
     /**

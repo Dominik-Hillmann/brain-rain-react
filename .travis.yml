@@ -1,0 +1,28 @@
+sudo: true
+
+language: node_js
+node_js:
+  - '14.15.4'
+
+branches:
+  only:
+    - main
+  
+cache:
+  directories:
+    - node_modules
+
+
+before_install:
+  - npm update
+install:
+  - npm install
+script:
+  - npm test
+
+notifications:  
+  email:  
+    recipients:  
+    - dominik.hillmann.wzl@gmail.com
+    on_success: always  
+    on_failure: always

@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.com/Dominik-Hillmann/brain-rain-react.svg?branch=main)](https://travis-ci.com/Dominik-Hillmann/brain-rain-react)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Dominik-Hillmann/brain-rain-react.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Dominik-Hillmann/brain-rain-react/context:javascript)
+[![CodeFactor](https://www.codefactor.io/repository/github/dominik-hillmann/brain-rain-react/badge)](https://www.codefactor.io/repository/github/dominik-hillmann/brain-rain-react)
+[![Last commit](https://img.shields.io/github/last-commit/Dominik-Hillmann/brain-rain-react)](https://img.shields.io/github/last-commit/Dominik-Hillmann/brain-rain-react)
+[![repo size](https://img.shields.io/github/repo-size/Dominik-Hillmann/brain-rain-react)](https://img.shields.io/github/repo-size/Dominik-Hillmann/brain-rain-react)
+[![contains](https://img.shields.io/badge/contains-tasty%20spaghetti%20code-informational)](https://img.shields.io/badge/contains-tasty%20spaghetti%20code-informational)
 # brain-rain-react
 
 A new website for the BRAINRAIN GbR using React.
@@ -43,6 +49,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+---
 ## Deployment on Ubuntu
 Sources:
 - https://medium.com/@timmykko/deploying-create-react-app-with-nginx-and-ubuntu-e6fe83c5e9e7
