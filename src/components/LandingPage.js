@@ -43,7 +43,7 @@ export default class LandingPage extends React.Component {
                 buttonText={<Translation>{t => t('product2-button')}</Translation>}
                 animatedEmoji="🔑"
                 animatedEmojiClassName="shaking-key"
-                buttonLink="https://www.etsy.com/de/listing/737720303/hundemarke-aus-holz-mit-individueller?ref=listings_manager_grid"
+                buttonLink="https://www.etsy.com/listing/813037384/personalisierbarer-schlusselanhanger-aus?ref=shop_home_feat_2"
                 textIsLeft={false}
                 isWhite={true}
             >
@@ -61,7 +61,7 @@ export default class LandingPage extends React.Component {
                 buttonText={<Translation>{t => t('product3-button')}</Translation>}
                 animatedEmoji="🎵"
                 animatedEmojiClassName="shaking-key"
-                buttonLink="https://www.etsy.com/de/listing/737720303/hundemarke-aus-holz-mit-individueller?ref=listings_manager_grid"
+                buttonLink="https://www.etsy.com/listing/936961923/personalised-wooden-keychain-with?ref=shop_home_feat_3"
                 textIsLeft={true}
                 isWhite={false}
             >

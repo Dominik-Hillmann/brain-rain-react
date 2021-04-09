@@ -41,7 +41,7 @@ const resources = {
             'product1': {
                 'title': 'Wooden dog tag with individual engraving.',
                 'text': `A beautiful round dog tag carrying an engraving 
-                that you choose. It has a diametet of 3.5 cm and is treated with
+                that you choose. It has a diameter of 3.5 cm and is treated with
                 lineseed oil to make it resistant against weather and to make it
                 feel nicer. Also you can choose between a leather band or a metal 
                 fastening.`,
@@ -60,7 +60,7 @@ const resources = {
 
             'product3': {
                 'title': `Wooden Spotify key fob.`,
-                'text': `A wonderful present for your loved one. Now, you
+                'text': `A wonderful present for your loved ones. Now, you
                 can gift your favorite song using a Spotify code. Just provide 
                 us with the song and an optional text and font and we will
                 engrave it for you onto beech wood. The key fob is 6 cm long and
@@ -104,7 +104,7 @@ const resources = {
             'product1': {
                 'title': 'Hundemarke aus Holz mit Gravierung.',
                 'text': `Eine schöne runde Hundemarke, die eine Gravierung
-                Ihrer Wahl trägt. Sie hat einen Durchmesser von 3.5 cm und wird 
+                Ihrer Wahl trägt. Sie hat einen Durchmesser von 3,5 cm und wird 
                 mit Leinölfirnis behandelt, damit sie wetterbeständig ist und sich
                 weicher anfühlt. Sie können ebenfalls zwischen einem Lederband 
                 und einer Metallbefestigung wählen.`,
@@ -125,10 +125,10 @@ const resources = {
             'product3': {
                 'title': `Spotify-Anhänger aus Holz.`,
                 'text': `Ein tolles Geschenk zu Weihnachten oder zum Geburtstag.
-                So kannst du dein Lieblings als Spotify-Code verschenken.
+                So kannst du dein Lieblingslied als Spotify-Code verschenken.
                 Gib uns einfach das Lied, das du verschenken willst und einen
                 optionalen Text, und wir schicken dir einen Birkenholz-Anhänger
-                zu. Der Anhänger ist 6 cm lang und 1.5 cm hoch und breit. Auch
+                zu. Der Anhänger ist 6 cm lang und 1,5 cm hoch und breit. Auch
                 dieser Anhänger wird mit Leinölfirnis bearbeitet.`,
                 'button': `Zum Shop.`
             }
