@@ -148,8 +148,9 @@ footer {
     }    
 }
 
+@media (max-width: 832px),
 
-@media only screen 
+only screen 
 and (min-device-width: 375px) 
 and (max-device-height: 667px)
 and (-webkit-device-pixel-ratio: 2),

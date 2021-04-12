@@ -16,8 +16,8 @@ span.ts-muster-content {
     margin: 0;
 }
 
-
-@media only screen 
+@media (max-width: 832px),
+only screen 
 and (min-device-width: 375px) 
 and (max-device-height: 667px)
 and (-webkit-device-pixel-ratio: 2),

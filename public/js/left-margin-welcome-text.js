@@ -7,11 +7,11 @@ const textResizeThreshold = 1024;
 const setMarginsWelcomeText = () => {
     const logoWrapper = document.querySelector('#logo-wrapper');
     const welcomeTextWrapper = document.querySelector('#welcome-text-wrapper');
-    if (logoWrapper.offsetWidth < (window.innerWidth / 2)) {
+    if (window.innerWidth > 1024) {
         welcomeTextWrapper.style.marginLeft = `${logoWrapper.offsetWidth}px`;
     } else {
         // To make CSS able to influence the style again.
-        welcomeTextWrapper.style.marginLeft = null;
+        welcomeTextWrapper.style.marginLeft = '0px';
     }
 
     if (window.innerWidth > textResizeThreshold) {

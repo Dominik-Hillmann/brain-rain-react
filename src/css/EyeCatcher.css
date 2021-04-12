@@ -187,8 +187,8 @@
     filter: drop-shadow(3px 3px 3px cornflowerblue);
 }
 
-
-@media only screen 
+@media (max-width: 832px),
+only screen 
 and (min-device-width: 375px) 
 and (max-device-height: 667px)
 and (-webkit-device-pixel-ratio: 2),
@@ -218,7 +218,7 @@ and (max-device-width: 1024px) {
     }
 
     #eyecatcher-background {
-        visibility: collapse;
+        visibility: collapse !important;
     }
 
     #welcome-text-wrapper {
@@ -232,7 +232,7 @@ and (max-device-width: 1024px) {
     }
 
     #eyecatcher {
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     #eyecatcher h1 {
@@ -250,14 +250,17 @@ and (max-device-width: 1024px) {
     #eyecatcher-logo {
         top: 600px;
         right: 10%;
+        visibility: collapse;
     }
     #brain {
         top: 520px;
         font-size: 1px;
+        visibility: collapse;
     }
 
     #rain {
         top: 600px;
+        visibility: collapse;
     }
 }
    

@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 70px; /* Höhe Header. */
+    background-color: white;
 }
 
 #logo-wrapper {
@@ -83,20 +84,9 @@ header {
     }
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-    /* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-/* Styles */
-}
-
+@media (max-width: 832px),
 /* iPhone 6, 7, 8 */
-@media only screen 
+only screen 
 and (min-device-width: 375px) 
 and (max-device-height: 667px)
 and (-webkit-device-pixel-ratio: 2),
@@ -119,7 +109,11 @@ and (max-device-width: 832px) {
 
     #logo-wrapper {
         visibility: visible;
-        width: 100%;
+        /* width: 500vw; */
+        /* margin: 0 auto 0 auto; */
+        /* background-color: blue; */
+        margin-left: calc(50% - var(--burger-button-width) / 2);
+        margin-right: 50%;
     }
 
     #menu-items {

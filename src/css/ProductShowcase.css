@@ -152,8 +152,13 @@ span {
     display: inline-block;
 }
 
-.ProductShowcase.is-white .product-description p span {
+.ProductShowcase.is-white .product-description p > span {
     margin: 0 0 20px 20px;
+}
+
+/* TO have slight punk glow. */
+.ProductShowcase:not(.is-white) .product-description p > span {    
+    filter: drop-shadow(30vw 50px 200px var(--brain-rain-pink));
 }
 
 span.bigger-text {
@@ -200,7 +205,7 @@ span.barking-doggo:hover {
 
 span.shaking-key {
     animation: barking-doggo-reverse 0.5s linear;
-    /* display: inline-block; */
+    display: inline-block;
     margin: none;
     padding: none;
     transform: translate3d(0, 0, 0);
@@ -284,12 +289,19 @@ span.shaking-key:hover {
     }
 }
 
-.ProductShowcase.is-white div.side-space {
+.ProductShowcase.is-white .side-space {
     background-color: white;
 }
 
+.ProductShowcase.is-white div.side-space {
+    width: auto;
+    height: auto;
+    background-color: blue;
+    overflow:auto;
+}
 
-@media only screen 
+@media (max-width: 832px),
+only screen 
 and (min-device-width: 375px) 
 and (max-device-height: 667px)
 and (-webkit-device-pixel-ratio: 2),
