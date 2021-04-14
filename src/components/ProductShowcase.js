@@ -15,6 +15,8 @@ export default class ProductShowcase extends React.Component {
         if (!atLeastOneImg) {
             throw new TypeError('ProductShowcase needs at least one image.');
         }
+        
+        this.state = { buttonText: this.props.buttonText };
     }
 
     /**
@@ -23,6 +25,27 @@ export default class ProductShowcase extends React.Component {
     handlePressBuyButton() {
         window.open(this.props.buttonLink, '_blank');
     }
+
+    /**
+     * What happens when the mouse hovers over the showcase button.
+     * Right now only for white showcases.
+     */
+    handleMouseOver() {
+        if (this.props.isWhite) {
+            this.setState({ buttonText: this.props.buttonHoverText });
+        }
+    }
+
+    /**
+     * What happens when the mouse leaves the showcase button.
+     * Right now only for white showcases.
+     */
+    handleMouseLeave() {
+        if (this.props.isWhite) {
+            this.setState({ buttonText: this.props.buttonText });
+        }
+    }
+
 
     render() {
         const productDescription = (
@@ -38,8 +61,10 @@ export default class ProductShowcase extends React.Component {
                     <button 
                         className={this.props.isWhite ? 'is-white' : ''} 
                         onClick={() => this.handlePressBuyButton()}
+                        onMouseOver={() => this.handleMouseOver()}
+                        onMouseLeave={() => this.handleMouseLeave()}
                     >
-                        {this.props.buttonText}
+                        {this.state.buttonText}
                     </button>
                 </p>
             </div>
@@ -54,7 +79,7 @@ export default class ProductShowcase extends React.Component {
             {productImgs}
             {productDescription}
         </>);
-        
+
         return (<>
             <div className={`ProductShowcase ${this.props.isWhite ? 'is-white': ''}`}>
                 <div className="side-space"></div>

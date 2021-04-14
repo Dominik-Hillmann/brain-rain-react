@@ -187,7 +187,7 @@
     filter: drop-shadow(3px 3px 3px cornflowerblue);
 }
 
-@media (max-width: 832px),
+@media (max-width: 1024px),
 only screen 
 and (min-device-width: 375px) 
 and (max-device-height: 667px)

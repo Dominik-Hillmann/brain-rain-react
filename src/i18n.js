@@ -24,8 +24,15 @@ const resources = {
             },
             
             'cookie': {
-                'banner': 'We use cookies to enhance user experience, m\'kay?',
-                'understand': 'M\'kay. I agree.'
+                'banner': `We use cookies to personalize content and ads, to
+                provide functionality for social media and to analyze access
+                to our website. Also, we pass on data about the usage of our website
+                to our partners for social media, advertising and analyzes.
+                Our partners possibly merge these data with further data that you
+                have provided or that they collected while you used their products
+                and services.`,
+                'understand': 'I agree.',
+                'decline': 'I decline.'
             },
 
             'catcher': {
@@ -66,6 +73,10 @@ const resources = {
                 engrave it for you onto beech wood. The key fob is 6 cm long and
                 has 1.5 cm of width and height.`,
                 'button': `Just what I needed!`
+            },
+
+            'products': {
+                'hovertext': '👉 To Etsy.'
             }
         }
     },
@@ -86,9 +97,16 @@ const resources = {
             }, 
             
             'cookie': {
-                'banner': `Wir nutzen Cookies (die Internetdinger, hier gibt 
-                es nichts zu essen), um die Benutzerefahrung zu verbessern.`,
-                'understand': 'Verstanden.',
+                'banner': `Wir verwenden Cookies, um Inhalte und Anzeigen zu 
+                personalisieren, Funktionen für soziale Medien anbieten zu können 
+                und die Zugriffe auf unsere Website zu analysieren. Außerdem 
+                geben wir Informationen zu Ihrer Verwendung unserer Website an 
+                unsere Partner für soziale Medien, Werbung und Analysen weiter. 
+                Unsere Partner führen diese Informationen möglicherweise mit weiteren 
+                Daten zusammen, die Sie ihnen bereitgestellt haben oder die sie im 
+                Rahmen Ihrer Nutzung der Dienste gesammelt haben.`,
+                'understand': 'Ich stimme zu.',
+                'decline': 'Ich lehne ab.'
             },
 
             'catcher': {
@@ -131,6 +149,10 @@ const resources = {
                 zu. Der Anhänger ist 6 cm lang und 1,5 cm hoch und breit. Auch
                 dieser Anhänger wird mit Leinölfirnis bearbeitet.`,
                 'button': `Zum Shop.`
+            },
+
+            'products': {
+                'hovertext': '👉 Zu Etsy.'
             }
         }
     }

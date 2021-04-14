@@ -4,6 +4,19 @@
     min-height: 400px;
 }
 
+.ProductShowcase.is-white {
+    /* Very important: Chrome thinks that background-images are more important than background colors,
+    so I spent > 5h trying to recolor the side space, which worked in Firefox, not in Chrome.
+    Now, the deed is done and I should remember that Chrome somehow overrides all background 
+    color rules with the last background image. */
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 69%);
+}
+
+div.side-space.is-white {
+    background-color: white;
+}
+
 .main-product-part {
     width: 100%;
     display: flex;
@@ -44,7 +57,7 @@
     margin: 20px;
 }
 
-.product-description button {
+.product-description button:not(.is-white) {
     /* Positioning */
     display: block;
     margin: auto;
@@ -67,14 +80,29 @@
 }
 
 .product-description button.is-white {
+    /* Positioning */
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Color */
     background-color: var(--brain-rain-pink);
     color: white;
     border: 2px solid var(--brain-rain-pink);
-    filter: drop-shadow(5px 5px 70px var(--brain-rain-pink));
+    /* Font */
+    font-family: 'Celias', sans-serif;
+    font-size: 17px;
+    /* Borders */
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50px;
+    /* Other */
+    cursor: pointer;
+
     animation: button-growth-reverse-is-white 0.15s ease-in-out;
 }
 
-.product-description button:hover {
+.product-description button:not(.is-white):hover {
     filter: drop-shadow(7px 7px 3px var(--brain-rain-pink));
     margin-top: 12px;
     border: 6px solid white;
@@ -83,22 +111,22 @@
 }
 
 .product-description button.is-white:hover {
-    filter: none;
     margin-top: 12px;
-    border: 6px solid var(--brain-rain-pink);
-    filter: drop-shadow(5px 5px 10px var(--brain-rain-pink));
+    border: 6px solid var(--etsy-orange);
     animation: button-growth-is-white 0.1s ease-in-out;
+    font-size: 20px;
+    background-color: var(--etsy-orange);
 }
 
 @keyframes button-growth {
     0% {
         filter: drop-shadow(3px 3px 3px var(--brain-rain-pink));
-        margin-top: 20px;
+        margin-top: 20px 0 0 0;
         border: 2px solid white;
         font-size: 17px;
     } 100% {
         filter: drop-shadow(7px 7px 3px var(--brain-rain-pink));
-        margin-top: 12px;
+        margin-top: 12px 50px 0 50px;
         border: 6px solid white;
         font-size: 20px;
     }
@@ -123,26 +151,30 @@
         margin-top: 20px;
         border: 2px solid var(--brain-rain-pink);
         font-size: 17px;
-        filter: drop-shadow(5px 5px 45px var(--brain-rain-pink));
+        background-color: var(--brain-rain-pink);
+        filter: none;
     } 100% {
         margin-top: 12px;
-        border: 6px solid var(--brain-rain-pink);
+        border: 6px solid var(--etsy-orange);
         font-size: 20px;
-        filter: drop-shadow(5px 5px 20px var(--brain-rain-pink));
+        background-color: var(--etsy-orange);
+        filter: none;
     }
 }
 
 @keyframes button-growth-reverse-is-white {
     0% {
         margin-top: 12px;
-        border: 6px solid var(--brain-rain-pink);
+        border: 6px solid var(--etsy-orange);
         font-size: 20px;
-        filter: drop-shadow(5px 5px 20px var(--brain-rain-pink));
+        background-color: var(--etsy-orange);
+        filter: none;
     } 100% {
         margin-top: 20px;
         border: 2px solid var(--brain-rain-pink);
         font-size: 17px;
-        filter: drop-shadow(5px 5px 45px var(--brain-rain-pink));
+        background-color: var(--brain-rain-pink);
+        filter: none;
     }
 }
 
@@ -167,6 +199,10 @@ span.bigger-text {
     display: inline-block;
 }
 
+.ProductShowcase.is-white span.bigger-text {
+    margin-left: 0;
+}
+
 span.smaller-text {
     text-align: justify;
 }
@@ -175,7 +211,6 @@ span.smaller-text {
 
 span.barking-doggo {
     animation: barking-doggo-reverse 0.5s linear;
-    /* display: inline-block; */
     margin: none;
     padding: none;
     transform: translate3d(0, 0, 0);
@@ -183,7 +218,6 @@ span.barking-doggo {
 
 span.barking-doggo:hover {
     animation: barking-doggo 0.5s linear;
-    /* transform: translate3d(0, 0, 0); */
     backface-visibility: hidden;
     perspective: 1000px;
     display: inline-block;
@@ -213,7 +247,6 @@ span.shaking-key {
 
 span.shaking-key:hover {
     animation: shaking-key 1s ease-in-out;
-    /* transform: translate3d(0, 0, 0); */
     backface-visibility: hidden;
     perspective: 1000px;
     display: inline-block;
@@ -236,24 +269,16 @@ span.shaking-key:hover {
 .product-imgs {
     display: flex;
     flex-grow: 1;
-    /* background-color: darkolivegreen;    */
     flex-basis: 50%;
     justify-content: center;
     align-items: center;
 }
 
 .product-imgs img {
-    /* background-color: red; */
     /* height: 100px; IMPORTANT: defined by parameter of ProductsShowcase! */
     animation: floating-1 10s ease-in-out infinite ;
     transform: translate3d(0, 0, 0);
-    /* backface-visibility: hidden; */
-    /* display: flex; */
     filter: drop-shadow(3px 3px 3px var(--brain-rain-blue));
-
-    /* text-align: center; */
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .is-white .product-imgs img {
@@ -289,16 +314,6 @@ span.shaking-key:hover {
     }
 }
 
-.ProductShowcase.is-white .side-space {
-    background-color: white;
-}
-
-.ProductShowcase.is-white div.side-space {
-    width: auto;
-    height: auto;
-    background-color: blue;
-    overflow:auto;
-}
 
 @media (max-width: 832px),
 only screen 
