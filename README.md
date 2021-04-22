@@ -130,8 +130,62 @@ location /files/ {
 }
 ```
 See `location / { ... }`. This way, all other routes get forwarded to your `index.html` in your `build` directory.
+
+### The `www` Subdomain
+In order to relocate everything from `www.brain-rain.com` to `brain-rain.com`, add the following
+to your `default` file.
+```
+server {
+   listen 80;
+   server_name www.brain-rain.com;
+   return 301 $scheme://brain-rain.com$request_uri;
+}
+```
+`$scheme` contains the protocol and `$request_uri` all additional parameters.
+
+
+### Start, Stop, Restart
 Done! Now, test whether the configuration syntax for Nginx is correct.
 ```sh
 sudo nginx -t
 ```
 Now, you can start/stop/restart the same way as any other service: `sudo service nginx start` and `sudo service nginx stop` and `sudo service nginx restart`.
+
+### What the config file should look like
+Withou comments, the config file should look like this by now.
+Some additions were made by certbot.
+```
+server {
+        root /var/www/brain-rain-react/build;
+        server_name brain-rain.com;
+        index index.html index.htm;
+        location / {
+                try_files $uri /index.html;
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+        }
+
+         listen 443 ssl; # managed by Certbot
+         ssl_certificate /etc/letsencrypt/live/brain-rain.com/fullchain.pem; # managed by Certbot
+         ssl_certificate_key /etc/letsencrypt/live/brain-rain.com/privkey.pem; # managed by Certbot
+         include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+         ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+}
+
+server {
+        listen 80;
+        server_name www.brain-rain.com;
+        return 301 $scheme://brain-rain.com$request_uri;
+}
+
+server {
+    if ($host = brain-rain.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+        listen 80 default_server;
+        server_name brain-rain.com;
+        return 404; # managed by Certbot
+}
+```

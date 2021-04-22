@@ -32,7 +32,9 @@ export default class ProductShowcase extends React.Component {
      */
     handleMouseOver() {
         if (this.props.isWhite) {
-            this.setState({ buttonText: this.props.buttonHoverText });
+            this.setState(_prevState => ({
+                buttonText: this.props.buttonHoverText 
+            }));
         }
     }
 
@@ -42,7 +44,9 @@ export default class ProductShowcase extends React.Component {
      */
     handleMouseLeave() {
         if (this.props.isWhite) {
-            this.setState({ buttonText: this.props.buttonText });
+            this.setState(_prevState => ({
+                buttonText: this.props.buttonText
+            }));
         }
     }
 

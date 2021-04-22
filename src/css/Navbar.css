@@ -9,6 +9,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #menu-items {
@@ -28,7 +29,7 @@ header {
 
 #menu-items p span {
     margin-left: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     cursor: pointer;
 }
 
@@ -66,8 +67,8 @@ header {
 
 @keyframes show-menu-item-border {
     from {        
-        border-top: 0px solid var(--brain-rain-pink);
-        border-bottom: 0px solid var(--brain-rain-pink);
+        border-top: 0 solid var(--brain-rain-pink);
+        border-bottom: 0 solid var(--brain-rain-pink);
     } to {
         border-top: 2px solid var(--brain-rain-pink);
         border-bottom: 2px solid var(--brain-rain-pink);
@@ -79,8 +80,8 @@ header {
         border-top: 2px solid var(--brain-rain-pink);
         border-bottom: 2px solid var(--brain-rain-pink);
     } to {
-        border-top: 0px solid var(--brain-rain-pink);
-        border-bottom: 0px solid var(--brain-rain-pink);
+        border-top: 0 solid var(--brain-rain-pink);
+        border-bottom: 0 solid var(--brain-rain-pink);
     }
 }
 

@@ -62,6 +62,14 @@ export default class Navbar extends Component {
     }
 
     /**
+     * What happens when the user clicks the logo in the upper left of the
+     * navigation bar.
+     */
+    handleLogoClick() {
+        window.open('https://brain-rain.com', '_blank');
+    }
+
+    /**
      * What happens when clicking the about menu item.
      * Will scroll the eye catcher into view.
      */
@@ -105,7 +113,7 @@ export default class Navbar extends Component {
                     </span>
                 </BurgerMenu>
                 <div id="logo-wrapper" className="side-space">
-                    <img src={logo} alt="The BRAINRAIN logo." />
+                    <img src={logo} alt="The BRAINRAIN logo." onClick={this.handleLogoClick()} />
                 </div>
                 <div id="menu-items">
                     <p>
