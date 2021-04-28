@@ -66,7 +66,7 @@ export default class Navbar extends Component {
      * navigation bar.
      */
     handleLogoClick() {
-        window.open('https://brain-rain.com', '_blank');
+        // window.open('https://brain-rain.com', '_blank');
     }
 
     /**
