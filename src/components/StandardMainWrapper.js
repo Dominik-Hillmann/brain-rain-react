@@ -1,7 +1,8 @@
 // Libraries
 import React from "react";
 // Stylesheets
-import '../css/StandardMainWrapper.css';
+import '../css/StandardMainWrapper.css'
+import '../css/WikiMaps.css';
 // Images
 import boldWave from '../img/bold-wave.png';
 

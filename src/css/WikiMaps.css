@@ -1,0 +1,22 @@
+#bold-wave {
+    width: 100%;
+    background-color: var(--lightest-brainrain-blue);
+    margin-bottom: -5px;
+    padding: 0;
+    height: 200px;
+}
+
+.wiki-maps-main {
+    background-image: var(--dark-blue-gradient);
+    margin: 0;
+    display: flex;
+}
+
+.side-space {
+    /* height: 100px;
+    display: flex; */
+}
+
+.poster-display img {
+    width: 300px;
+}
