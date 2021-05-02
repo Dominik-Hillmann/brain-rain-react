@@ -11,7 +11,7 @@ import '../css/ProductShowcase.css';
 export default class ProductShowcase extends React.Component {
     constructor(props) {
         super(props);
-        const atLeastOneImg = this.props.children.length > 0;
+        const atLeastOneImg = typeof this.props.children !== 'undefined';
         if (!atLeastOneImg) {
             throw new TypeError('ProductShowcase needs at least one image.');
         }

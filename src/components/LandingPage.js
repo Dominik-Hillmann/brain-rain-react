@@ -10,6 +10,10 @@ import { Translation } from 'react-i18next';
 // Images
 import mark1 from '../img/marke-1.png';
 import mark2 from '../img/marke-2.png';
+import nut1 from '../img/nuss-1.png';
+import nut2 from '../img/nuss-2.png';
+import birch1 from '../img/birke-1.png';
+import birch2 from '../img/birke-2.png';
 
 /**
  * @class Represents the landing page as a whole.
@@ -49,12 +53,8 @@ export default class LandingPage extends React.Component {
                 textIsLeft={false}
                 isWhite={true}
             >
-                <img src={mark1} alt="A BRAINRAIN dog tag." style={{ 
-                    height: "290px" 
-                }} />
-                <img src={mark2} alt="A BRAINRAIN dog tag." style={{ 
-                    height: '250px',
-                    marginLeft: '-40px'
+                <img src={nut2} style={{ 
+                    height: "300px" 
                 }} />
             </ProductShowcase>
             <ProductShowcase
@@ -68,12 +68,12 @@ export default class LandingPage extends React.Component {
                 textIsLeft={true}
                 isWhite={false}
             >
-                <img src={mark1} alt="A BRAINRAIN dog tag." style={{ 
-                    height: "290px" 
+                <img src={birch1} style={{ 
+                    height: "200px" 
                 }} />
-                <img src={mark2} alt="A BRAINRAIN dog tag." style={{ 
-                    height: '250px',
-                    marginLeft: '-40px'
+                <img src={birch2} style={{ 
+                    height: '200px',
+                    marginLeft: '-100px'
                 }} />
             </ProductShowcase>
             <CustomFooter
