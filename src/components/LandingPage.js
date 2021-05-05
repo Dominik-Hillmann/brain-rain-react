@@ -10,7 +10,6 @@ import { Translation } from 'react-i18next';
 // Images
 import mark1 from '../img/marke-1.png';
 import mark2 from '../img/marke-2.png';
-import nut1 from '../img/nuss-1.png';
 import nut2 from '../img/nuss-2.png';
 import birch1 from '../img/birke-1.png';
 import birch2 from '../img/birke-2.png';
