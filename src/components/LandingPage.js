@@ -1,5 +1,6 @@
 // Libraries
 import React from 'react';
+import ReactGA from 'react-ga';
 // Components 
 import Navbar from './Navbar.js';
 import EyeCatcher from './EyeCatcher.js';
@@ -18,6 +19,14 @@ import birch2 from '../img/birke-2.png';
  * @class Represents the landing page as a whole.
  */
 export default class LandingPage extends React.Component {
+    handleTrackAccept() {
+        console.log('Test');
+        const trackingId = 'UA-196179486-1';
+        ReactGA.initialize(trackingId); 
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
+
+
     render() {
         return (<>
             <Navbar />
@@ -52,9 +61,7 @@ export default class LandingPage extends React.Component {
                 textIsLeft={false}
                 isWhite={true}
             >
-                <img src={nut2} style={{ 
-                    height: "300px" 
-                }} />
+                <img src={nut2} alt="Nussbaumanhänger" style={{ height: "300px" }} />
             </ProductShowcase>
             <ProductShowcase
                 textBig={<Translation>{t => t('product3-title')}</Translation>}
@@ -67,10 +74,8 @@ export default class LandingPage extends React.Component {
                 textIsLeft={true}
                 isWhite={false}
             >
-                <img src={birch1} style={{ 
-                    height: "200px" 
-                }} />
-                <img src={birch2} style={{ 
+                <img src={birch1} alt="Buchenholzanhänger" style={{ height: '200px' }} />
+                <img src={birch2} alt="Buchenholzanhänger" style={{ 
                     height: '200px',
                     marginLeft: '-100px'
                 }} />
@@ -81,6 +86,7 @@ export default class LandingPage extends React.Component {
                 instagramLink="https://www.instagram.com/charlie_fricke"
             />
             <CookieConsent
+                onAccept={() => this.handleTrackAccept()}
                 location="bottom"
                 buttonText={<Translation>{t => t('cookie-understand')}</Translation>}
                 contentStyle={{

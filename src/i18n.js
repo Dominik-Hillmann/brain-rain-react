@@ -77,6 +77,11 @@ const resources = {
 
             'products': {
                 'hovertext': '👉 To Etsy.'
+            },
+
+            'wiki': {
+                'background': 'Background image',
+                'title': 'Title'
             }
         }
     },
@@ -153,6 +158,11 @@ const resources = {
 
             'products': {
                 'hovertext': '👉 Zu Etsy.'
+            },
+
+            'wiki': {
+                'background': 'Hintergrundbild',
+                'title': 'Titel'
             }
         }
     }

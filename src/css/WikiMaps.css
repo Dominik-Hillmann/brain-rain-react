@@ -12,11 +12,13 @@
     display: flex;
 }
 
-.side-space {
-    /* height: 100px;
-    display: flex; */
-}
 
 .poster-display img {
-    width: 300px;
+    width: 400px;
+}
+
+
+.Collapisble {
+    background-color: red;
+    margin-bottom: 150px;
 }
