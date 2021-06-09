@@ -148,6 +148,31 @@ footer {
     }    
 }
 
+#adobe-portfolio {
+    animation: portfolio-hover-reversed 0.3s ease-in-out;
+}
+
+#adobe-portfolio:hover {
+    background-color: rgb(80, 175, 255);
+    animation: portfolio-hover 0.3s ease-in-out;
+}
+
+@keyframes portfolio-hover {
+    from {
+        background-color: transparent;
+    } to {
+        background-color: rgb(80, 175, 255);
+    }
+}
+
+@keyframes portfolio-hover-reversed {
+    from {
+        background-color: rgb(80, 175, 255);
+    } to {
+        background-color: transparent;
+    }
+}
+
 @media (max-width: 832px),
 
 only screen 

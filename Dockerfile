@@ -1,5 +1,8 @@
-FROM smebberson/alpine-nginx-nodejs:latest
+# FROM smebberson/alpine-nginx-nodejs:latest
+FROM nginx:latest
+FROM node:latest
 
+FROM certbot:latest
 # Copy all the files in the repository into a directory from which NGINX will serve it.
 # RUN mkdir /var/www
 RUN mkdir /var/www/brain-rain-react
@@ -16,7 +19,8 @@ RUN cat ./util/nginx-config-sites-available-included.txt > /etc/nginx/nginx.conf
 RUN cat ./util/nginx-config.txt > /etc/nginx/sites-available/default
 # RUN service nginx restart
 # RUN /var/www/brain-rain-react/util/nginx-config.sh
-EXPOSE 5555
+EXPOSE 80
+EXPOSE 403
 CMD npm install; npm run build; service nginx start
 
 # # Multi-stage

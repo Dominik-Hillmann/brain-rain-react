@@ -10,6 +10,25 @@ A new website for the BRAINRAIN GbR using React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docker commands to start the app
+### Build the image
+```sh
+cd ~/brain-rain-react
+sudo docker build -t brain-rain-react:1.0.0 .
+```
+### Build the container
+```sh
+sudo docker container run --name <name> -p 8000:80 brain-rain-react
+```
+### Start the container
+```sh
+sudo docker container start brain-rain-react
+```
+### Stop the container
+```sh
+sudo docker container stop brain-rain-react
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

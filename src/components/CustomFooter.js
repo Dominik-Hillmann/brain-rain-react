@@ -9,6 +9,7 @@ import darkBlueNegativeBrain from '../img/logo-negative-dark-blue.png';
 import instagramLogo from '../img/instagram.png';
 import etsyLogo from '../img/etsy.png';
 import githubLogo from '../img/github.png';
+import adobePortfolioLogo from '../img/adobe-portfolio.png'
 
 /**
  * @class The footer at the bottom of the website.
@@ -33,6 +34,13 @@ export default class CustomFooter extends React.Component {
      */
     handleGithubClick() {
         window.open(this.props.githubLink, '_blank');
+    }
+
+    /**
+     * What happens of the Adobe Portfolio butto gets clicked.
+     */
+    handleAdobePortfolioClick() {
+
     }
 
     render() {
@@ -61,6 +69,12 @@ export default class CustomFooter extends React.Component {
                             src={githubLogo}
                             onClick={() => this.handleGithubClick()}
                             alt="GitHub logo"
+                        />
+                        <img
+                            id="adobe-portfolio"
+                            src={adobePortfolioLogo}
+                            onClick={() => this.handleAdobePortfolioClick()}
+                            alt="Adobe Portfolio logo"
                         />
                     </div>
                     <div className="law-stuff">
