@@ -378,7 +378,7 @@ export default class Imprint extends React.Component {
                         Google ist unter dem Privacy-Shield-Abkommen 
                         zertifiziert und bietet hierdurch eine Garantie, das 
                         europäische Datenschutzrecht einzuhalten (
-                        <a target="_blank" href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active">
+                        <a target="_blank" rel="noreferrer" href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active">
                             https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active
                         </a>
                         ).
@@ -414,7 +414,7 @@ export default class Imprint extends React.Component {
                         sowie die Verarbeitung dieser Daten durch Google 
                         verhindern, indem sie das unter folgendem Link verfügbare 
                         Browser-Plugin herunterladen und installieren:&nbsp;
-                        <a target="_blank" href="http://tools.google.com/dlpage/gaoptout?hl=de">
+                        <a target="_blank" rel="noreferrer" href="http://tools.google.com/dlpage/gaoptout?hl=de">
                             http://tools.google.com/dlpage/gaoptout?hl=de
                         </a>
                         .
@@ -423,12 +423,12 @@ export default class Imprint extends React.Component {
                         Weitere Informationen zur Datennutzung durch Google, 
                         Einstellungs- und Widerspruchsmöglichkeiten, erfahren 
                         Sie in der Datenschutzerklärung von Google (
-                        <a target="_blank" href="https://policies.google.com/technologies/ads">
+                        <a target="_blank" rel="noreferrer" href="https://policies.google.com/technologies/ads">
                             https://policies.google.com/technologies/ads
                         </a>
                         ) sowie in den Einstellungen für die Darstellung von 
                         Werbeeinblendungen durch Google 
-                        <a target="_blank" href="https://adssettings.google.com/authenticated">
+                        <a target="_blank" rel="noreferrer" href="https://adssettings.google.com/authenticated">
                             (https://adssettings.google.com/authenticated
                         </a>
                         ).

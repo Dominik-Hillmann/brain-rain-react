@@ -64,7 +64,7 @@ export default class WikiMaps extends React.Component {
                     </div>
 
                     <div className="poster-display">
-                        <img alt="A test image." src={test} />
+                        <img alt="The poster will be displayed here." src={test} />
                     </div>
                 </div>
                 <div className="side-space"></div>
