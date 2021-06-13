@@ -20,9 +20,9 @@ install:
 script:
   - npm test
 
-notifications:  
-  email:  
-    recipients:  
+notifications:
+  email:
+    recipients:
     - dominik.hillmann.wzl@gmail.com
-    on_success: always  
+    on_success: always
     on_failure: always
