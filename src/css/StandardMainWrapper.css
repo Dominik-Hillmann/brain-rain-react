@@ -19,7 +19,7 @@
     width: 80%;
     max-width: 900px;
     border-radius: 10px;
-    filter: drop-shadow(2px 0px 4px gray);
+    filter: drop-shadow(2px 0 4px gray);
     z-index: 5;
     position: relative;
     margin-bottom: 100px;
