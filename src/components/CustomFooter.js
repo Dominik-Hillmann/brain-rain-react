@@ -40,7 +40,7 @@ export default class CustomFooter extends React.Component {
      * What happens of the Adobe Portfolio butto gets clicked.
      */
     handleAdobePortfolioClick() {
-
+        window.open(this.props.portfolioLink, '_blank');
     }
 
     render() {

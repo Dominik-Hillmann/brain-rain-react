@@ -443,6 +443,7 @@ export default class Imprint extends React.Component {
                 githubLink="https://github.com/Dominik-Hillmann"
                 etsyLink="https://www.etsy.com/de/shop/BRAINRAINShop"
                 instagramLink="https://www.instagram.com/charlie_fricke"
+                portfolioLink="https://charliefricke.com"
             />
         </>);
     }
