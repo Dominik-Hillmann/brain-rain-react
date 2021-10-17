@@ -44,48 +44,53 @@ export default class CustomFooter extends React.Component {
     }
 
     render() {
-        return (<footer>
-            <div className="side-space"></div>
-                <div id="inner-footer">
-                    <div className="logo-space">
-                        <img src={darkBlueNegativeBrain} alt="BRAINRAIN logo" />
-                        <h1>BRAINRAIN</h1>
-                    </div>
-                    <div className="social-media">
-                        <img 
-                            id="etsy" 
-                            src={etsyLogo}
-                            onClick={() => this.handleEtsyClick()} 
-                            alt="Etsy logo"
-                        />
-                        <img 
-                            id="instagram" 
-                            src={instagramLogo} 
-                            onClick={() => this.handleInstagramClick()}
-                            alt="Instagram logo"
-                        />
-                        <img 
-                            id="github" 
-                            src={githubLogo}
-                            onClick={() => this.handleGithubClick()}
-                            alt="GitHub logo"
-                        />
-                        <img
-                            id="adobe-portfolio"
-                            src={adobePortfolioLogo}
-                            onClick={() => this.handleAdobePortfolioClick()}
-                            alt="Adobe Portfolio logo"
-                        />
-                    </div>
-                    <div className="law-stuff">
-                        Copyright Ⓒ {new Date().getFullYear()}&nbsp;
-                        <Translation>{t => t('footer-remark')}</Translation>&nbsp;
-                        <a href={`${window.location.origin}/imprint`}>
-                            <Translation>{t => t('footer-imprint')}</Translation>
-                        </a>.
-                    </div>
-                </div>
-            <div className="side-space"></div>
-        </footer>);
+        return (
+            <>
+                <footer>
+                    <div className="side-space"></div>
+                        <div id="inner-footer">
+                            <div className="logo-space">
+                                <img src={darkBlueNegativeBrain} alt="BRAINRAIN logo" />
+                                <h1>BRAINRAIN</h1>
+                            </div>
+                            <div className="social-media">
+                                <img 
+                                    id="etsy" 
+                                    src={etsyLogo}
+                                    onClick={() => this.handleEtsyClick()} 
+                                    alt="Etsy logo"
+                                />
+                                <img 
+                                    id="instagram" 
+                                    src={instagramLogo} 
+                                    onClick={() => this.handleInstagramClick()}
+                                    alt="Instagram logo"
+                                />
+                                <img 
+                                    id="github" 
+                                    src={githubLogo}
+                                    onClick={() => this.handleGithubClick()}
+                                    alt="GitHub logo"
+                                />
+                                <img
+                                    id="adobe-portfolio"
+                                    src={adobePortfolioLogo}
+                                    onClick={() => this.handleAdobePortfolioClick()}
+                                    alt="Adobe Portfolio logo"
+                                />
+                            </div>
+                            <div className="law-stuff">
+                                Copyright Ⓒ {new Date().getFullYear()}&nbsp;
+                                <Translation>{t => t('footer-remark')}</Translation>&nbsp;
+                                <a href={`${window.location.origin}/imprint`}>
+                                    <Translation>{t => t('footer-imprint')}</Translation>
+                                </a>.
+                            </div>
+                        </div>
+                    <div className="side-space"></div>
+                </footer>
+                <p id="made-with">Made with ❤️ and 🧠.</p>
+            </>
+        );
     }
 }

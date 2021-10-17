@@ -78,14 +78,6 @@ footer {
 @keyframes instagram-hover {
     from {
         background: transparent;
-        /* background: radial-gradient(
-            circle at 30% 107%, 
-            rgba(253, 244, 151, 0.0) 0%, 
-            rgba(253, 244, 151, 0.0) 5%, 
-            rgba(253, 89, 73, 0.0) 45%,
-            rgba(214, 36, 159, 0.0) 60%,
-            rgba(40, 90, 235, 0.0) 90%
-        ); */
     } to {
         background: radial-gradient(
             circle at 30% 107%, 
@@ -213,4 +205,12 @@ and (max-device-width: 1024px) {
         width: 100%;
         text-align: center;
     }
+}
+
+#made-with {
+    background-color: var(--darkest-brainrain-blue);
+    margin: 0 auto 0 auto;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
 }

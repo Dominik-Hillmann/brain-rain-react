@@ -21,6 +21,7 @@
         rgb(20, 18, 63)
     );
     --lightest-brainrain-blue: rgb(20, 18, 63);
+    --darkest-brainrain-blue: rgb(7, 10, 25);
 }
 html,body{
     overflow-x: hidden;

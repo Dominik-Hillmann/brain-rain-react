@@ -1,6 +1,7 @@
 // Libraries
 import React, { Component } from 'react';
 import { toRoman } from 'roman-numerals';
+import { motion } from 'framer-motion';
 // Components
 import { Translation } from 'react-i18next';
 // Stylesheets
@@ -26,8 +27,23 @@ export default class EyeCatcher extends Component {
                     style={{ backgroundImage: `url(${brainAnimation})` }}
                     alt="The BRAINRAIN logo with animated background."    
                 />
-                <h1 id="brain">BRAIN</h1>
-                <h1 id="rain">RAIN</h1>
+                <motion.h1
+                    id="brain"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    // tansition={{ duration: 30 }}
+                >
+                    BRAIN
+                </motion.h1>
+                <motion.h1 
+                    id="rain"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    tansition={{ duration: 30 }}
+                >
+                    RAIN
+                </motion.h1>
                 <h2 id="num">{toRoman(parseInt(new Date().getFullYear()))}</h2>
                 <div id="welcome-text-wrapper">
                     <div id="welcome-text">
