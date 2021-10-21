@@ -1,12 +1,11 @@
 // Libraries
 import React from 'react';
-import ReactGA from 'react-ga';
 // Components 
 import Navbar from './Navbar.js';
 import EyeCatcher from './EyeCatcher.js';
+import ConfiguredCookieConsent from './ConfiguredCookieConsent.js';
 import ProductShowcase from './ProductShowcase.js';
 import CustomFooter from './CustomFooter.js';
-import CookieConsent from 'react-cookie-consent';
 import { Translation } from 'react-i18next';
 // Images
 import mark1 from '../img/marke-1.png';
@@ -19,18 +18,12 @@ import birch2 from '../img/birke-2.png';
  * @class Represents the landing page as a whole.
  */
 export default class LandingPage extends React.Component {
-    handleTrackAccept() {
-        console.log('Test');
-        const trackingId = 'UA-196179486-1';
-        ReactGA.initialize(trackingId); 
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }
-
-
     render() {
         return (<>
             <Navbar />
+
             <EyeCatcher />
+
             <ProductShowcase
                 textBig={<Translation>{t => t('product1-title')}</Translation>} 
                 textSmall={<Translation>{t => t('product1-text')}</Translation>}
@@ -50,6 +43,7 @@ export default class LandingPage extends React.Component {
                     marginLeft: '-40px'
                 }} />
             </ProductShowcase>
+
             <ProductShowcase
                 textBig={<Translation>{t => t('product2-title')}</Translation>} 
                 textSmall={<Translation>{t => t('product2-text')}</Translation>}
@@ -63,6 +57,7 @@ export default class LandingPage extends React.Component {
             >
                 <img src={nut2} alt="Nussbaumanhänger" style={{ height: "300px" }} />
             </ProductShowcase>
+
             <ProductShowcase
                 textBig={<Translation>{t => t('product3-title')}</Translation>}
                 textSmall={<Translation>{t => t('product3-text')}</Translation>}
@@ -80,41 +75,15 @@ export default class LandingPage extends React.Component {
                     marginLeft: '-100px'
                 }} />
             </ProductShowcase>
+            
             <CustomFooter
                 githubLink="https://github.com/Dominik-Hillmann"
                 etsyLink="https://www.etsy.com/de/shop/BRAINRAINShop"
                 instagramLink="https://www.instagram.com/charlie_fricke"
                 portfolioLink="https://charliefricke.com"
             />
-            <CookieConsent
-                onAccept={() => this.handleTrackAccept()}
-                location="bottom"
-                buttonText={<Translation>{t => t('cookie-understand')}</Translation>}
-                contentStyle={{
-                    fontFamily: 'Open Sans'
-                }}
-                cookieName="General cookies"
-                style={{ 
-                    background: "black",
-                    fontFamily: 'Celias'
-                }}
-
-                buttonStyle={{ 
-                    color: "white", 
-                    fontFamily: 'Celias',
-                    backgroundColor: 'cornflowerblue'
-                }}
-
-                enableDeclineButton
-                onDecline={() => console.warn('User declined cookie usage.')}
-                declineButtonText={<Translation>{t => t('cookie-decline')}</Translation>}
-                declineButtonStyle={{
-                    background:'var(--brain-rain-pink)',
-                    fontFamily: 'Celias'
-                }}
-            >
-                <Translation>{t => t('cookie-banner')}</Translation>&nbsp;🍪
-            </CookieConsent>
+            
+            <ConfiguredCookieConsent />
         </>);
     }
 }
