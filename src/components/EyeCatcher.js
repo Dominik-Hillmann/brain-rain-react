@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { toRoman } from 'roman-numerals';
 // Components
 import { Translation } from 'react-i18next';
+import Bubbles from './Bubbles.js';
 // Stylesheets
 import '../css/style.css';
 import '../css/EyeCatcher.css';
@@ -19,8 +20,10 @@ export default class EyeCatcher extends Component {
     render() {
         return (
             <div className="EyeCatcher" id="eyecatcher">
+                <Bubbles />
+
                 <div className="side-space"></div>
-                <img 
+                <img
                     src={negativeLogo} 
                     id="eyecatcher-logo" 
                     style={{ backgroundImage: `url(${brainAnimation})` }}
