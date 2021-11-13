@@ -1,0 +1,21 @@
+@keyframes bubbling {
+    0% {
+        top: 80%;
+        opacity: 0;
+    } 97% {
+        top: 12%;
+        opacity: 1;
+    } 100% {
+        top: 10%;
+        opacity: 0;
+    }
+}
+
+.bubble {
+    position: absolute;
+    z-index: 0;
+    filter: drop-shadow(3px 3px 3px cornflowerblue);
+    animation-name: bubbling;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
