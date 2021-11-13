@@ -20,7 +20,9 @@ const resources = {
             'footer': {
                 'imprint': 'Imprint',
                 'remark': `BRAINRAIN GbR, Wanzleben, Saxony-Anhalt, Germany. 
-                All rights reserved.`
+                All rights reserved.`,
+                'agbs': 'Terms & Conditions',
+                'returnpolicy': 'Return Policy'
             },
             
             'cookie': {
@@ -99,6 +101,8 @@ const resources = {
                 'imprint': 'Impressum',
                 'remark': `BRAINRAIN GbR, Wanzleben, Sachsen-Anhalt. Alle Rechte 
                 vorbehalten.`,
+                'agbs': 'AGBs',
+                'returnpolicy': 'Widerrufsbelehrung'
             }, 
             
             'cookie': {

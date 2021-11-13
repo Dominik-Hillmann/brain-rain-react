@@ -84,6 +84,12 @@ export default class CustomFooter extends React.Component {
                                 <Translation>{t => t('footer-remark')}</Translation>&nbsp;
                                 <a href={`${window.location.origin}/imprint`}>
                                     <Translation>{t => t('footer-imprint')}</Translation>
+                                </a>.&nbsp;
+                                <a href={`${window.location.origin}/agbs`}>
+                                    <Translation>{t => t('footer-agbs')}</Translation>
+                                </a>.&nbsp;
+                                <a href={`${window.location.origin}/widerruf`}>
+                                    <Translation>{t => t('footer-returnpolicy')}</Translation>
                                 </a>.
                             </div>
                         </div>
