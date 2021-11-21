@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Build the image
 ```sh
 cd ~/brain-rain-react
-sudo docker build -t brain-rain-react:1.0.0 .
+sudo docker build -t brain-rain-react:latest .
 ```
 ### Build the container
 ```sh

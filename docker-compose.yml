@@ -1,0 +1,7 @@
+# docker container run --name <name> -p 8000:80 brain-rain-react
+version: '3'
+services:
+  website:
+    image: brain-rain-react
+    ports:
+      - 8000:80
