@@ -68,7 +68,7 @@ export default class Imprint extends React.Component {
 
                 <p>Wir garantieren nicht, dass die Qualität von Produkten, Serviceleistungen, Informationen oder anderen Materialien, die von Ihnen gekauft oder erworben wurden, Ihren Erwartungen entspricht, oder dass Fehler in der Serviceleistung korrigiert werden.</p>
 
-                <h3>Abschnitt 6 - RICHTIGKEIT DER RECHNUNGS- UND KONTOINFORMATIONEN</h3>
+                <h3>Abschnitt 6 - Richtigkeit der Rechnungs- und Kontoinformationen</h3>
 
                 <p>Wir behalten uns das Recht vor, jegliche Bestellung, die Sie bei uns aufgeben, abzulehnen. Wir können nach eigenem Ermessen die Abnahmemengen pro Person, pro Haushalt oder pro Bestellung begrenzen oder stornieren. Diese Einschränkungen können Bestellungen umfassen, die von oder unter demselben Kundenkonto oder derselben Kreditkarte aufgegeben wurden und/oder Bestellungen, die dieselbe Rechnungs- und/oder Lieferadresse verwenden. Falls wir eine Bestellung ändern oder stornieren, werden wir versuchen, Sie zu benachrichtigen, indem wir die E-Mail und/oder die Rechnungsadresse/Telefonnummer kontaktieren, die zum Zeitpunkt der Bestellung angegeben wurde. Wir behalten uns das Recht vor, Bestellungen einzuschränken oder zu verbieten, die nach unserem alleinigen Ermessen den Anschein erwecken, von Händlern, Wiederverkäufern oder Distributoren aufgegeben worden zu sein.
                 Sie stimmen zu, aktuelle, vollständige und richtige Kauf- und Kontoinformationen für alle in unserem Shop getätigten Käufe anzugeben. Sie stimmen zu, Ihr Konto und andere Informationen, einschließlich Ihrer E-Mail-Adresse und Kreditkartennummern und Ablaufdaten, umgehend zu aktualisieren, damit wir Ihre Transaktionen abschließen und Sie bei Bedarf kontaktieren können.</p>
@@ -137,7 +137,7 @@ export default class Imprint extends React.Component {
 
                 <p>Sie verpflichten sich, der BRAINRAIN GbR und unsere Muttergesellschaft, Tochtergesellschaften, verbundenen Unternehmen, Partner, leitenden Angestellten, Führungskräfte, Vertreter, Auftragnehmer, Lizenzgeber, Dienstleister, Subunternehmer, Lieferanten, Praktikanten und Mitarbeiter im Zusammenhang mit Ansprüchen oder Forderungen, einschließlich angemessener Anwaltskosten, die von Dritten aufgrund Ihrer Verletzung dieser Allgemeinen Geschäftsbedingungen oder der Dokumente, die durch Bezugnahme darauf Bestandteil derselben sind, oder Ihrer Verletzung eines Gesetzes oder der Rechte eines Dritten geltend gemacht werden, zu entschädigen, zu verteidigen und schadlos zu halten.</p>
 
-                <h3>Abschnitt 15 - SALVATORISCHE KLAUSEL</h3>
+                <h3>Abschnitt 15 - Salvatorische Klausel</h3>
 
                 <p>Sollte sich herausstellen, dass eine Bestimmung dieser Allgemeinen Geschäftsbedingungen rechtswidrig, nichtig oder nicht durchsetzbar ist, ist diese Bestimmung dennoch im gesetzlich zugelassenen Umfang durchsetzbar, und der nicht durchsetzbare Teil gilt als von diesen Allgemeinen Geschäftsbedingungen getrennt, wobei eine solche Festlegung keine Auswirkungen auf die Gültigkeit und Durchsetzbarkeit der übrigen Bestimmungen hat.</p>
 
