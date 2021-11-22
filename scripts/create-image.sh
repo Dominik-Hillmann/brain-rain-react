@@ -1,0 +1,1 @@
+sudo docker build -t brain-rain-react:latest .
