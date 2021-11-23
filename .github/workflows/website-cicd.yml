@@ -8,11 +8,11 @@ on:
 
 jobs:
   build:
-    runs-on: [self-hosted, linux, x64]
+    runs-on: [ self-hosted, linux, x64 ]
     
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [ 14.x ]
 
     steps:
     - name: Checkout main branch
