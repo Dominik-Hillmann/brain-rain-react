@@ -1,4 +1,4 @@
-![GitHub Workflow status](https://github.com/Dominik-Hillmann/brain-rain-react/actions/workflows/node.js.yml/badge.svg)
+![GitHub Workflow status](https://github.com/Dominik-Hillmann/brain-rain-react/actions/workflows/website-cicd.yml/badge.svg)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Dominik-Hillmann/brain-rain-react.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Dominik-Hillmann/brain-rain-react/context:javascript)
 [![CodeFactor](https://www.codefactor.io/repository/github/dominik-hillmann/brain-rain-react/badge)](https://www.codefactor.io/repository/github/dominik-hillmann/brain-rain-react)
 [![Last commit](https://img.shields.io/github/last-commit/Dominik-Hillmann/brain-rain-react)](https://img.shields.io/github/last-commit/Dominik-Hillmann/brain-rain-react)
