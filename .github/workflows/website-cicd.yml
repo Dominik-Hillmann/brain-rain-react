@@ -2,9 +2,9 @@ name: Integrate and deploy website
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, cicd-with-docker ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, cicd-with-docker ]
 
 jobs:
   build:
@@ -32,15 +32,21 @@ jobs:
     - name: Run unit tests 
       run: npm test
 
-    - name: Stop Docker container
+    - name: Test directories
       run: |
-        docker container stop website-nginx
-        docker container rm website-nginx
+        pwd
+        cd ~/repositories
+        ls
 
-    - name: Remove old Docker image
-      run: docker image rm brain-rain-react:latest
+    # - name: Stop Docker container
+    #   run: |
+    #     docker container stop website-nginx
+    #     docker container rm website-nginx
+
+    # - name: Remove old Docker image
+    #   run: docker image rm brain-rain-react:latest
     
-    - name: Build new Docker image
-      run: docker build -t brain-rain-react:latest .
+    # - name: Build new Docker image
+    #   run: docker build -t brain-rain-react:latest .
 
     # Als naechtes dir der traefik config nutzen
