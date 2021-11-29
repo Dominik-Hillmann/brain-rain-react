@@ -32,24 +32,15 @@ jobs:
     - name: Run unit tests 
       run: npm test
 
-#    - name: Test directories
-#      run: |
-#        pwd
-#        cd ~/repositories
-#        ls
-
     - name: Build new Docker image
       run: docker image build -t brain-rain-react:latest .
 
-    # - name: Stop Docker container
-    #   run: |
-    #     docker container stop website-nginx
-    #     docker container rm website-nginx
+    - name: Stop and remove Docker container
+      run: |
+        docker container stop website-nginx
+        docker container rm website-nginx
 
-    # - name: Remove old Docker image
-    #   run: docker image rm brain-rain-react:latest
-    
-    # - name: Build new Docker image
-    #   run: docker build -t brain-rain-react:latest .
-
-    # Als naechtes dir der traefik config nutzen
+    - name: Start new Docker container from new image
+      run: |
+        cd ~/repositories/traefik-config/
+        docker-compose up -d website-nginx
