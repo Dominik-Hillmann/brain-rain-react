@@ -42,7 +42,7 @@ const resources = {
                 'wemake': `We make personalized items for you or your friends 
                 and family.`,
                 'weoffer': `Currently, we offer custom made wooden 
-                key fobs and posters.`,
+                key fobs and calendars.`,
                 'takelook1': 'Take a look at',
                 'takelook2': 'them right here'
             },
@@ -123,7 +123,7 @@ const resources = {
                 'wemake': `Wir stellen personalisierte Anhänger für
                 dich oder deine Freunde her.`,
                 'weoffer': `Derzeit bieten wir maßgefertigte Anhänger 
-                aus Holz sowie Poster an.`,
+                aus Holz sowie Kalender an.`,
                 'takelook1': 'Schau sie dir',
                 'takelook2': 'gerne an'
             },
