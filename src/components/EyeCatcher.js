@@ -14,7 +14,7 @@ import negativeLogo from '../img/logo-negative-dark-blue.png'
 import mobileWave from '../img/bold-wave.png';
 
 /**
- * @class Represents the main lettering seen first when the page is loaded.
+ * @class EyeCatcher Represents the main lettering seen first when the page is loaded.
  */
 export default class EyeCatcher extends Component {
     render() {
