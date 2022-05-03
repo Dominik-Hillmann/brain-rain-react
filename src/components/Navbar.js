@@ -38,7 +38,7 @@ export default class Navbar extends Component {
      * to the actual address?
      */
     handlePressContactItem() {
-        window.location.href = `mailto:brainrainshop@gmail.com?body=%0A%0A%0ASent
+        window.location.href = `mailto:info@brain-rain.com?body=%0A%0A%0ASent
         %20from%20the%20BRAINRAIN%20website%20(please%20leave%20this%20here).`;
     }
 

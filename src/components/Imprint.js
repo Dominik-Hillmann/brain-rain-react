@@ -34,7 +34,7 @@ export default class Imprint extends React.Component {
                         BRAINRAIN GbR<br />
                         Heinrich-Heine-Weg 17<br />
                         39164 Stadt Wanzleben-Börde<br />
-                        brainrainshop[at]gmail.com<br /><br />
+                        info[at]brain-rain.com<br /><br />
                         Kleinunternehmer gemäß §19 UStG
                     </span>
                 </p>
