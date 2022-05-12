@@ -103,13 +103,13 @@ export default class Navbar extends Component {
                         {this.productsSymbol}&nbsp;&nbsp;&nbsp;
                         <Translation>{t => t('navbar-products')}</Translation>
                     </span>
-                    <span onClick={() => this.handlePressContactItem()}>
-                        {this.contactSymbol}&nbsp;&nbsp;&nbsp;
-                        <Translation>{t => t('navbar-contact')}</Translation>
-                    </span>
                     <span onClick={() => this.handlePressEtsyShopItem()}>
                         {this.etsySymbol}&nbsp;&nbsp;&nbsp;
                         <Translation>{t => t('navbar-etsy')}</Translation>
+                    </span>            
+                    <span onClick={() => this.handlePressContactItem()}>
+                        {this.contactSymbol}&nbsp;&nbsp;&nbsp;
+                        <Translation>{t => t('navbar-contact')}</Translation>
                     </span>
                 </BurgerMenu>
                 <div id="logo-wrapper" className="side-space">
