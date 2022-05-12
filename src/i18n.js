@@ -12,7 +12,7 @@ const resources = {
         translation: {
             'navbar': {
                 'about': 'About',
-                'products': 'Products',
+                'products': 'Projects',
                 'contact': 'Contact',
                 'etsy': 'Etsy Shop',
             },
@@ -92,7 +92,7 @@ const resources = {
         translation: {
             'navbar': {
                 'about': 'Über uns',
-                'products': 'Produkte',
+                'products': 'Projekte',
                 'contact': 'Kontakt',
                 'etsy': 'Etsy-Shop',
             },
