@@ -112,8 +112,8 @@ const resources = {
                 geben wir Informationen zu Ihrer Verwendung unserer Website an 
                 unsere Partner für soziale Medien, Werbung und Analysen weiter. 
                 Unsere Partner führen diese Informationen möglicherweise mit weiteren 
-                Daten zusammen, die Sie ihnen bereitgestellt haben oder die sie im 
-                Rahmen Ihrer Nutzung der Dienste gesammelt haben.`,
+                Daten zusammen, die Du ihnen bereitgestellt hast oder die sie im 
+                Rahmen Deiner Nutzung der Dienste gesammelt haben.`,
                 'understand': 'Ich stimme zu.',
                 'decline': 'Ich lehne ab.'
             },
@@ -133,7 +133,7 @@ const resources = {
                 'text': `Eine schöne runde Hundemarke, die eine Gravierung
                 Ihrer Wahl trägt. Sie hat einen Durchmesser von 3,5 cm und wird 
                 mit Leinölfirnis behandelt, damit sie wetterbeständig ist und sich
-                weicher anfühlt. Sie können ebenfalls zwischen einem Lederband 
+                weicher anfühlt. Du kannst ebenfalls zwischen einem Lederband 
                 und einer Metallbefestigung wählen.`,
                 'button': 'Hier geht es zum Angebot.'
             },
@@ -141,11 +141,11 @@ const resources = {
             'product2': {
                 'title': `Personalisierter Schlüsselanhänger aus Holz.`,
                 'text': `Ein schöner, weicher Schlüsselanhänger aus Nussbaumholz,
-                welcher ein perfektes Geschenk zum Geburtstag und zu Weihnachten ist. 
+                welcher ein perfektes Geschenk zum Geburtstag oder zu Weihnachten ist. 
                 Er ist 6 cm lang und ist durch die Behandlung mit Leinsamenöl
                 resistent gegen Wetter und außerdem wesentlicher besser
-                anzufassen. Sie können jede Seite mit Symbolen und Text mit
-                einer Schrift Ihrer Wahl verzieren.`,
+                anzufassen. Du kannst jede Seite mit Symbolen und Text mit
+                einer Schrift deiner Wahl verzieren.`,
                 'button': `Auf zum Shop!`
             },
 
@@ -154,7 +154,7 @@ const resources = {
                 'text': `Ein tolles Geschenk zu Weihnachten oder zum Geburtstag.
                 So kannst du dein Lieblingslied als Spotify-Code verschenken.
                 Gib uns einfach das Lied, das du verschenken willst und einen
-                optionalen Text, und wir schicken dir einen Birkenholz-Anhänger
+                optionalen Text, und wir schicken Dir einen Birkenholz-Anhänger
                 zu. Der Anhänger ist 6 cm lang und 1,5 cm hoch und breit. Auch
                 dieser Anhänger wird mit Leinölfirnis bearbeitet.`,
                 'button': `Zum Shop.`
