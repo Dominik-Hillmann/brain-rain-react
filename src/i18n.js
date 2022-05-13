@@ -47,6 +47,15 @@ const resources = {
                 'takelook2': 'them right here'
             },
 
+            'filmphoto': {
+                'title': `Event photography and videography`,
+                'text': `It doesn't matter whether it's grandma's birthday party, the next village 
+                fete or your wedding, we make surethat the most beautiful moments are captured in 
+                proper style and that you can focus on the moment.In addition to professional 
+                equipment, we primarily rely on our creativity!`,
+                'button': `Our portfolio (coming soon)`
+            },
+
             'product1': {
                 'title': 'Wooden dog tag with individual engraving.',
                 'text': `A beautiful round dog tag carrying an engraving 
@@ -126,6 +135,15 @@ const resources = {
                 aus Holz sowie Kalender an.`,
                 'takelook1': 'Schau sie dir',
                 'takelook2': 'gerne an'
+            },
+
+            'filmphoto': {
+                'title': `Eventfotografie und -filmografie`,
+                'text': `Egal ob Omas Geburtstagsfeier, das nächste Dorffest oder eure Hochzeit, 
+                wir sorgen dafür, dass die schönsten Momente stilecht festgehalten werden und Du 
+                dich ganz auf den Augenblickkonzentrieren kannst. Dabei setzen wir neben 
+                professionellem Equipment vor allem auf unsere Kreativität!`,
+                'button': `Unser Portfolio (bald verfügbar)`
             },
 
             'product1': {

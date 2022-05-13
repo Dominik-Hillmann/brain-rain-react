@@ -13,6 +13,8 @@ import mark2 from '../img/marke-2.png';
 import nut2 from '../img/nuss-2.png';
 import birch1 from '../img/birke-1.png';
 import birch2 from '../img/birke-2.png';
+import camera from '../img/camera.png';
+import drone from '../img/drone.png';
 
 /**
  * @class Represents the landing page as a whole.
@@ -25,6 +27,26 @@ export default class LandingPage extends React.Component {
             <EyeCatcher />
 
             <ProductShowcase
+                textBig={<Translation>{t => t('filmphoto-title')}</Translation>} 
+                textSmall={<Translation>{t => t('filmphoto-text')}</Translation>}
+                buttonText={<Translation>{t => t('filmphoto-button')}</Translation>}
+                buttonHoverText={<Translation>{t => t('filmphoto-hovertext')}</Translation>}
+                animatedEmoji="📷"
+                animatedEmojiClassName="shaking-key"
+                buttonLink="https://www.etsy.com/de/listing/737720303/hundemarke-aus-holz-mit-individueller?ref=listings_manager_grid"
+                textIsLeft={false}
+                isWhite={false}
+            >
+                <img src={drone} alt="A drone used for photography." style={{ 
+                    height: "370px" 
+                }} />
+                <img src={camera} alt="A Nikon camera." style={{ 
+                    height: '350px',
+                    marginLeft: '-70px'
+                }} />
+            </ProductShowcase>
+
+            <ProductShowcase
                 textBig={<Translation>{t => t('product1-title')}</Translation>} 
                 textSmall={<Translation>{t => t('product1-text')}</Translation>}
                 buttonText={<Translation>{t => t('product1-button')}</Translation>}
@@ -33,7 +55,7 @@ export default class LandingPage extends React.Component {
                 animatedEmojiClassName="barking-doggo"
                 buttonLink="https://www.etsy.com/de/listing/737720303/hundemarke-aus-holz-mit-individueller?ref=listings_manager_grid"
                 textIsLeft={true}
-                isWhite={false}
+                isWhite={true}
             >
                 <img src={mark1} alt="A BRAINRAIN dog tag." style={{ 
                     height: "290px" 

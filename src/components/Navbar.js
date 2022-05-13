@@ -129,15 +129,15 @@ export default class Navbar extends Component {
                         </span>
                     </p>
                     <p>
-                        {this.contactSymbol}
-                        <span onClick={() => this.handlePressContactItem()}>
-                            <Translation>{t => t('navbar-contact')}</Translation>
-                        </span>
-                    </p>
-                    <p>
                         {this.etsySymbol}
                         <span onClick={() => this.handlePressEtsyShopItem()}>
                             <Translation>{t => t('navbar-etsy')}</Translation>
+                        </span>
+                    </p>
+                    <p>
+                        {this.contactSymbol}
+                        <span onClick={() => this.handlePressContactItem()}>
+                            <Translation>{t => t('navbar-contact')}</Translation>
                         </span>
                     </p>
                 </div>
