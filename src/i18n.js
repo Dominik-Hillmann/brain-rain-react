@@ -129,7 +129,7 @@ const resources = {
       'catcher': {
         'weare': 'Hi, wir sind',
         'wemake': `Wir smöchten dich herzlich auf unserer Kreativspielwiese begrüßen.`,
-        'weoffer': `Hier findest Du einen Überblick über unsere aktuellen Projekte.`,
+        'weoffer': `Hier findest Du einen Überblick unserer aktuellen Projekte.`,
         'contact': `Nimm bei Interesse gerne Kontakt mit uns auf!`
       },
 
