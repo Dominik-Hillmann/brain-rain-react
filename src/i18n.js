@@ -134,8 +134,7 @@ const resources = {
       },
 
       'filmphoto': {
-        'title1': `Eventfotografie und `,
-        'title2': `-filmografie`,
+        'title': `Eventfotographie und -filmographie`,
         'text': `Egal ob Omas Geburtstagsfeier, das nächste Dorffest oder eure Hochzeit, 
         wir sorgen dafür, dass die schönsten Momente stilecht festgehalten werden und Du 
         dich ganz auf den Augenblick konzentrieren kannst. Dabei setzen wir neben 
