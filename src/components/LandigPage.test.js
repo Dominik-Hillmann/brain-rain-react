@@ -5,6 +5,6 @@ import * as ReactDOM from 'react-dom';
 import LandingPage from './LandingPage.js';
 
 test('Renders the LandingPage component.', () => {
-    const root = document.createElement('div');
-    ReactDOM.render(<LandingPage />, root);
+  const root = document.createElement('div');
+  ReactDOM.render(<LandingPage />, root);
 });

@@ -1,36 +1,36 @@
 #error-wrapper {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 500px;
 }
 
 #error-wrapper img {
-    width: 100px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+  width: 100px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 #error-wrapper h1 {
-    font-family: 'Celias', sans-serif;
+  font-family: 'Celias', sans-serif;
 
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 #error-wrapper p {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  text-align: center;
 }
 
 #error-wrapper p a {
-    color: black;
+  color: black;
 }

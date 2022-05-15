@@ -5,6 +5,6 @@ import * as ReactDOM from 'react-dom';
 import EyeCatcher from './EyeCatcher.js';
 
 test('Renders the EyeCatcher component.', () => {
-    const root = document.createElement('div');
-    ReactDOM.render(<EyeCatcher />, root);
+  const root = document.createElement('div');
+  ReactDOM.render(<EyeCatcher />, root);
 });

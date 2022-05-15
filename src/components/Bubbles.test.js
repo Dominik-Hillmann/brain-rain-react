@@ -5,8 +5,8 @@ import * as ReactDOM from 'react-dom';
 import Bubbles from './Bubbles.js';
 
 describe('bubbles eye catcer tests.', () => {
-    test('renders the bubbles component', () => {
-        const root = document.createElement('div');
-        ReactDOM.render(<Bubbles />, root);
-    });
+  test('renders the bubbles component', () => {
+    const root = document.createElement('div');
+    ReactDOM.render(<Bubbles />, root);
+  });
 });

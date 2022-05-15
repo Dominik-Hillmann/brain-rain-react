@@ -1,73 +1,81 @@
 .LanguageSwitcher {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #flags-container {
-    filter: drop-shadow(1px 3px 3px gray);
-    cursor: pointer;
-    animation-name: flag-shadows-reverse;
-    animation-duration: 0.2s;
+  filter: drop-shadow(1px 3px 3px gray);
+  cursor: pointer;
+  animation-name: flag-shadows-reverse;
+  animation-duration: 0.2s;
 }
 
 #flags-container:hover {
-    filter: drop-shadow(1px 7px 5px gray);
-    animation-name: flag-shadows;
-    animation-duration: 0.1s;
+  filter: drop-shadow(1px 7px 5px gray);
+  animation-name: flag-shadows;
+  animation-duration: 0.1s;
 }
 
 @keyframes flag-shadows {
-    from {
-        filter: drop-shadow(1px 3px 3px gray);
-    } to {
-        filter: drop-shadow(1px 7px 5px gray);
-    }
+  from {
+    filter: drop-shadow(1px 3px 3px gray);
+  }
+
+  to {
+    filter: drop-shadow(1px 7px 5px gray);
+  }
 }
 
 @keyframes flag-shadows-reverse {
-    from {
-        filter: drop-shadow(1px 7px 5px gray);
-    } to {
-        filter: drop-shadow(1px 3px 3px gray);
-    }
+  from {
+    filter: drop-shadow(1px 7px 5px gray);
+  }
+
+  to {
+    filter: drop-shadow(1px 3px 3px gray);
+  }
 }
 
 .flag {
-    height: 30px;    
+  height: 30px;
 }
 
 #flags-container:hover .front-flag {
-    height: 45px;
-    animation: front-flag-larger 0.1s ease-in-out;
+  height: 45px;
+  animation: front-flag-larger 0.1s ease-in-out;
 }
 
 @keyframes front-flag-larger {
-    from {
-        height: 30px;
-    } to {
-        height: 45px;
-    }
+  from {
+    height: 30px;
+  }
+
+  to {
+    height: 45px;
+  }
 }
 
 @keyframes front-flag-larger-reverse {
-    from {
-        height: 45px;
-    } to {
-        height: 30px;
-    }
+  from {
+    height: 45px;
+  }
+
+  to {
+    height: 30px;
+  }
 }
 
 .front-flag {
-    position: relative;
-    margin-right: -15px;
-    margin-bottom: -7px; 
-    z-index: 2;
-    animation: front-flag-larger-reverse 0.1s ease-in-out;
+  position: relative;
+  margin-right: -15px;
+  margin-bottom: -7px;
+  z-index: 2;
+  animation: front-flag-larger-reverse 0.1s ease-in-out;
 }
 
 .back-flag {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }

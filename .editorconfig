@@ -9,7 +9,7 @@ charset = utf-8
 # 4 space indentation
 [{*.js,*.jsx,*.ts,*.tsx,*.json,*.css}]
 indent_style = space
-indent_size = 4
+indent_size = 2
 
 # Matches the exact files either package.json or .travis.yml
 [{*.yml,*.yaml}]

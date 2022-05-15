@@ -35,7 +35,7 @@ export default class Navbar extends Component {
    * Opens the BRAINRAIN shop on Etsy.
    */
   handlePressEtsyShopItem() {
-    window.open('https://www.etsy.com/de/shop/BRAINRAINShop', '_blank'); 
+    window.open('https://www.etsy.com/de/shop/BRAINRAINShop', '_blank');
   }
 
   /**
@@ -114,11 +114,11 @@ export default class Navbar extends Component {
           <span onClick={() => this.handlePressEtsyShopItem()}>
             {this.etsySymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-etsy')}</Translation>
-          </span> 
+          </span>
           <span onClick={() => this.handlePressScrappbookShopItem()}>
             {this.scrappbookSymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-scrappbook')}</Translation>
-          </span>          
+          </span>
           <span onClick={() => this.handlePressContactItem()}>
             {this.contactSymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-contact')}</Translation>

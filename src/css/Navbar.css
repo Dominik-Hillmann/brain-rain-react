@@ -1,88 +1,80 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    height: 70px; /* Höhe Header. */
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px; /* Höhe Header. */
+  background-color: white;
 }
 
 #logo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 #menu-items {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 #menu-items p {
-    margin-right: 30px; /* Abstand Menüelemente. */
-    font-family: 'Celias', sans-serif;
-    font-weight: bold;
-    animation: show-menu-item-border-reverse 0.09s;
-    cursor: default;
+  margin-right: 30px; /* Abstand Menüelemente. */
+  font-family: 'Celias', sans-serif;
+  font-weight: bold;
+  animation: show-menu-item-border-reverse 0.09s;
+  cursor: default;
 }
 
 #menu-items p span {
-    margin-left: 5px;
-    margin-bottom: 0;
-    cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 0;
+  cursor: pointer;
 }
 
 #logo-wrapper img {
-    height: 30px;
-    animation: logo-growth-reverse 0.5s;
+  height: 30px;
+  animation: logo-growth-reverse 0.5s;
 }
 
 #logo-wrapper img:hover {
-    height: 40px;
-    animation: logo-growth 0.5s;
+  height: 40px;
+  animation: logo-growth 0.5s;
 }
 
 @keyframes logo-growth {
-    from { height: 30px } to { height: 40px }
+  from { height: 30px } to { height: 40px }
 }
 
 @keyframes logo-growth-reverse {
-    from { height: 40px } to { height: 30px }
-}
-
-#menu-items p span.currently-shown {
-    /* border-top: 3px solid white;
-
-    padding-top: 2px solid white;
-    padding-bottom: 2px solid white;
-    border-bottom: 3px var(--brain-rain-pink) solid; */
+  from { height: 40px } to { height: 30px }
 }
 
 #menu-items p:hover {
-    border-top: 2px solid var(--brain-rain-pink);
-    border-bottom: 2px var(--brain-rain-pink) solid;
-    animation: show-menu-item-border 0.07s;
+  border-top: 2px solid var(--brain-rain-pink);
+  border-bottom: 2px var(--brain-rain-pink) solid;
+  animation: show-menu-item-border 0.07s;
 }
 
 @keyframes show-menu-item-border {
-    from {        
-        border-top: 0 solid var(--brain-rain-pink);
-        border-bottom: 0 solid var(--brain-rain-pink);
-    } to {
-        border-top: 2px solid var(--brain-rain-pink);
-        border-bottom: 2px solid var(--brain-rain-pink);
-    }
+  from {        
+    border-top: 0 solid var(--brain-rain-pink);
+    border-bottom: 0 solid var(--brain-rain-pink);
+  } to {
+    border-top: 2px solid var(--brain-rain-pink);
+    border-bottom: 2px solid var(--brain-rain-pink);
+  }
 }
 
 @keyframes show-menu-item-border-reverse {
-    from {
-        border-top: 2px solid var(--brain-rain-pink);
-        border-bottom: 2px solid var(--brain-rain-pink);
-    } to {
-        border-top: 0 solid var(--brain-rain-pink);
-        border-bottom: 0 solid var(--brain-rain-pink);
-    }
+  from {
+    border-top: 2px solid var(--brain-rain-pink);
+    border-bottom: 2px solid var(--brain-rain-pink);
+  } to {
+    border-top: 0 solid var(--brain-rain-pink);
+    border-bottom: 0 solid var(--brain-rain-pink);
+  }
 }
 
 @media (max-width: 832px),
@@ -104,24 +96,24 @@ and (-webkit-device-pixel-ratio: 3),
 /* Non-iPhone small screens */
 only screen 
 and (max-device-width: 832px) {
-    .bm-burger-button {
-        visibility: visible !important;
-    }
+  .bm-burger-button {
+    visibility: visible !important;
+  }
 
-    #logo-wrapper {
-        visibility: visible;
-        /* width: 500vw; */
-        /* margin: 0 auto 0 auto; */
-        /* background-color: blue; */
-        margin-left: calc(50% - var(--burger-button-width) / 2);
-        margin-right: 50%;
-    }
+  #logo-wrapper {
+    visibility: visible;
+    /* width: 500vw; */
+    /* margin: 0 auto 0 auto; */
+    /* background-color: blue; */
+    margin-left: calc(50% - var(--burger-button-width) / 2);
+    margin-right: 50%;
+  }
 
-    #menu-items {
-        visibility: collapse;
-    }
+  #menu-items {
+    visibility: collapse;
+  }
 
-    .side-space {
-        visibility: collapse;
-    }
+  .side-space {
+    visibility: collapse;
+  }
 }

@@ -5,6 +5,6 @@ import * as ReactDOM from 'react-dom';
 import ErrorPage from './ErrorPage.js';
 
 test('Renders the ErrorPage component.', () => {
-    const root = document.createElement('div');
-    ReactDOM.render(<ErrorPage />, root);
+  const root = document.createElement('div');
+  ReactDOM.render(<ErrorPage />, root);
 });
