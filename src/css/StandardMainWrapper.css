@@ -6,7 +6,7 @@
   justify-content: space-between;
 }
 
-.standard-main-wrapper-wrapper img {
+.standard-main-wrapper-wrapper>img {
   width: 100%;
   filter: drop-shadow(3px 3px 3px var(--brain-rain-blue));
   position: relative;

@@ -15,10 +15,12 @@ import adobePortfolioLogo from '../img/adobe-portfolio.png'
  * @class The footer at the bottom of the website.
  */
 export default class CustomFooter extends React.Component {
+
   /**
    * What happens when the Etsy button gets clicked.
    */
   handleEtsyClick() {
+
     window.open(this.props.etsyLink, '_blank');
   }
 
@@ -26,6 +28,7 @@ export default class CustomFooter extends React.Component {
    * What happens if the Instagram button gets clicked.
    */
   handleInstagramClick() {
+
     window.open(this.props.instagramLink, '_blank');
   }
 
@@ -33,6 +36,7 @@ export default class CustomFooter extends React.Component {
    * What happens if the GitHub button gets clicked.
    */
   handleGithubClick() {
+
     window.open(this.props.githubLink, '_blank');
   }
 
@@ -40,6 +44,7 @@ export default class CustomFooter extends React.Component {
    * What happens of the Adobe Portfolio butto gets clicked.
    */
   handleAdobePortfolioClick() {
+
     window.open(this.props.portfolioLink, '_blank');
   }
 
@@ -48,11 +53,14 @@ export default class CustomFooter extends React.Component {
       <>
         <footer>
           <div className="side-space"></div>
+
           <div id="inner-footer">
+
             <div className="logo-space">
               <img src={darkBlueNegativeBrain} alt="BRAINRAIN logo" />
               <h1>BRAINRAIN</h1>
             </div>
+
             <div className="social-media">
               <img
                 id="etsy"
@@ -79,6 +87,7 @@ export default class CustomFooter extends React.Component {
                 alt="Adobe Portfolio logo"
               />
             </div>
+
             <div className="law-stuff">
               Copyright Ⓒ {new Date().getFullYear()}&nbsp;
               <Translation>{t => t('footer-remark')}</Translation>&nbsp;
@@ -93,8 +102,10 @@ export default class CustomFooter extends React.Component {
               </a>.
             </div>
           </div>
+
           <div className="side-space"></div>
         </footer>
+
         <p id="made-with">Made with ❤️ and 🧠.</p>
       </>
     );

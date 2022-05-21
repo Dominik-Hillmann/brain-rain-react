@@ -1,0 +1,144 @@
+.dolle-product {
+  margin-bottom: 30px;
+}
+
+.dolle-product>div {
+  vertical-align: top;
+}
+
+.dolle-product h1 {
+  margin-top: 0;
+}
+
+.dolle-product>.keep-left {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.dolle-product>.keep-right {
+  display: inline-block;
+    width: 49%;
+  margin-left: 1%;
+}
+
+.dolle-product img {
+  display: block;
+  width: 100%;
+}
+
+.dolle-product>.keep-right *, .dolle-product>.keep-right {
+  text-align: center;
+}
+
+.cart-menu {
+  horiz-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+.cart-menu>.amount-selector, .cart-menu>button {
+  display: inline-block;
+  width: 47%;
+}
+
+.cart-menu>.amount-selector {
+  margin-right: 1%;
+  vertical-align: center;
+}
+
+.cart-menu>button {
+  margin-left: 1%;
+}
+
+.cart-menu>.amount-selector>* {
+  display: inline-block;
+  width: 18%;
+  background-color: var(--brain-rain-pink);
+  border: 0;
+  vertical-align: top;
+  height: 30px;
+}
+
+.cart-menu>.amount-selector>button:nth-child(1) {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.cart-menu>.amount-selector button:nth-child(3) {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cart-menu>.amount-selector>p {
+  font-family: "Celias", sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top
+}
+
+.cart-menu>button {
+  font-family: "Celias", sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top;
+  background-color: var(--brain-rain-pink);
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  height: 30px;
+}
+
+.cart-menu button:hover {
+  cursor: pointer;
+}
+
+.cart-menu arrow {
+  box-shadow: none;
+  color: white;
+}
+
+
+@media (max-width: 832px),
+only screen
+and (min-device-width: 375px)
+and (max-device-height: 667px)
+and (-webkit-device-pixel-ratio: 2),
+  /* iPhone 6+, 7+, 8+ */
+only screen
+and (min-device-width: 414px)
+and (max-device-height: 736px)
+and (-webkit-device-pixel-ratio: 2),
+  /* iPhone X  */
+only screen
+and (min-device-width: 375px)
+and (max-device-height: 812px)
+and (-webkit-device-pixel-ratio: 3),
+  /* Non-iPhone small screens */
+only screen
+and (max-device-width: 1024px) {
+
+  .dolle-product {
+    margin-bottom: 70px;
+  }
+
+  .dolle-product>.keep-left {
+    margin: 20px 0 15px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dolle-product>.keep-right {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-menu>.amount-selector, .cart-menu>button {
+    display: block;
+    width: 100%;
+  }
+
+}

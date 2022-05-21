@@ -1,20 +1,20 @@
 // Libraries
 import React from 'react';
 // Components 
-import Navbar from './Navbar.js';
-import EyeCatcher from './EyeCatcher.js';
-import ConfiguredCookieConsent from './ConfiguredCookieConsent.js';
-import ProductShowcase from './ProductShowcase.js';
-import CustomFooter from './CustomFooter.js';
+import Navbar from '../Navbar.js';
+import EyeCatcher from '../EyeCatcher.js';
+import ConfiguredCookieConsent from '../ConfiguredCookieConsent.js';
+import ProductShowcase from '../ProductShowcase.js';
+import CustomFooter from '../CustomFooter.js';
 import { Translation } from 'react-i18next';
 // Images
-import mark1 from '../img/marke-1.png';
-import mark2 from '../img/marke-2.png';
-import nut2 from '../img/nuss-2.png';
-import birch1 from '../img/birke-1.png';
-import birch2 from '../img/birke-2.png';
-import camera from '../img/camera.png';
-import drone from '../img/drone.png';
+import mark1 from '../../img/marke-1.png';
+import mark2 from '../../img/marke-2.png';
+import nut2 from '../../img/nuss-2.png';
+import birch1 from '../../img/birke-1.png';
+import birch2 from '../../img/birke-2.png';
+import camera from '../../img/camera.png';
+import drone from '../../img/drone.png';
 
 /**
  * @class Represents the landing page as a whole.
