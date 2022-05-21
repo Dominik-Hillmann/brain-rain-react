@@ -15,7 +15,9 @@ import logo from '../img/brain-rain-logo.png';
  */
 export default class Navbar extends Component {
   constructor() {
+
     super();
+
     this.aboutSymbol = '💁‍♂️';
     this.contactSymbol = '✍️';
     this.productsSymbol = '✨';
@@ -27,6 +29,7 @@ export default class Navbar extends Component {
    * What happens when the Scrappbook link gets clicked.
    */
   handlePressScrappbookShopItem() {
+
     window.open('#', '_blank')
   }
 
@@ -35,6 +38,7 @@ export default class Navbar extends Component {
    * Opens the BRAINRAIN shop on Etsy.
    */
   handlePressEtsyShopItem() {
+
     window.open('https://www.etsy.com/de/shop/BRAINRAINShop', '_blank');
   }
 
@@ -46,6 +50,7 @@ export default class Navbar extends Component {
    * to the actual address?
    */
   handlePressContactItem() {
+
     window.location.href = `mailto:info@brain-rain.com?body=%0A%0A%0ASent
     %20from%20the%20BRAINRAIN%20website%20(please%20leave%20this%20here).`;
   }
@@ -55,13 +60,18 @@ export default class Navbar extends Component {
    * Will scroll the first product into view.
    */
   handlePressProductsItem() {
+
     const firstProductShowcase = document.querySelector('.product-description');
+
     try {
+
       firstProductShowcase.scrollIntoView({
         block: 'start',
         behavior: 'smooth'
       });
+
     } catch (e) {
+
       if (e instanceof TypeError) {
         // The product is not on this page.
         window.open(window.location.origin);
@@ -82,13 +92,18 @@ export default class Navbar extends Component {
    * Will scroll the eye catcher into view.
    */
   handlePressAboutItem() {
+
     const eyeCatcher = document.querySelector('#eyecatcher');
+
     try {
+
       eyeCatcher.scrollIntoView({
         block: 'start',
         behavior: 'smooth'
       });
+
     } catch (e) {
+
       if (e instanceof TypeError) {
         // About is not on this page, navigate to landing page.
         window.open(window.location.origin);
@@ -97,36 +112,46 @@ export default class Navbar extends Component {
   }
 
   render() {
+
     return (
       <header>
         <BurgerMenu>
+
           <span>
-            <LanguageSwitcher startLang="en" />
+            <LanguageSwitcher startLang="de" />
           </span>
+
           <span onClick={() => this.handlePressAboutItem()}>
             {this.aboutSymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-about')}</Translation>
           </span>
+
           <span onClick={() => this.handlePressProductsItem()}>
             {this.productsSymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-products')}</Translation>
           </span>
+
           <span onClick={() => this.handlePressEtsyShopItem()}>
             {this.etsySymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-etsy')}</Translation>
           </span>
+
           <span onClick={() => this.handlePressScrappbookShopItem()}>
             {this.scrappbookSymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-scrappbook')}</Translation>
           </span>
+
           <span onClick={() => this.handlePressContactItem()}>
             {this.contactSymbol}&nbsp;&nbsp;&nbsp;
             <Translation>{t => t('navbar-contact')}</Translation>
           </span>
+
         </BurgerMenu>
+
         <div id="logo-wrapper" className="side-space">
           <img src={logo} alt="The BRAINRAIN logo." onClick={this.handleLogoClick()} />
         </div>
+
         <div id="menu-items">
           <p>
             {this.aboutSymbol}
@@ -134,34 +159,41 @@ export default class Navbar extends Component {
               <Translation>{t => t('navbar-about')}</Translation>
             </span>
           </p>
+
           <p>
             {this.productsSymbol}
             <span onClick={() => this.handlePressProductsItem()}>
               <Translation>{t => t('navbar-products')}</Translation>
             </span>
           </p>
+
           <p>
             {this.etsySymbol}
             <span onClick={() => this.handlePressEtsyShopItem()}>
               <Translation>{t => t('navbar-etsy')}</Translation>
             </span>
           </p>
+
           <p>
             {this.scrappbookSymbol}
             <span onClick={() => this.handlePressScrappbookShopItem()}>
               <Translation>{t => t('navbar-scrappbook')}</Translation>
             </span>
           </p>
+
           <p>
             {this.contactSymbol}
             <span onClick={() => this.handlePressContactItem()}>
               <Translation>{t => t('navbar-contact')}</Translation>
             </span>
           </p>
+
         </div>
+
         <div className="side-space">
           <LanguageSwitcher startLang="en" />
         </div>
+
       </header>
     );
   }

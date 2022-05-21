@@ -9,8 +9,11 @@ import '../css/ProductShowcase.css';
  * The images should be cut out due to the 'floating' effect.
  */
 export default class ProductShowcase extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     const atLeastOneImg = typeof this.props.children !== 'undefined';
     if (!atLeastOneImg) {
       throw new TypeError('ProductShowcase needs at least one image.');
@@ -23,6 +26,7 @@ export default class ProductShowcase extends React.Component {
    * What happens when the buy button at the end of the text gets pressed.
    */
   handlePressBuyButton() {
+
     window.open(this.props.buttonLink, '_blank');
   }
 
@@ -31,7 +35,9 @@ export default class ProductShowcase extends React.Component {
    * Right now only for white showcases.
    */
   handleMouseOver() {
+
     if (this.props.isWhite) {
+
       this.setState(_prevState => ({
         buttonText: this.props.buttonHoverText
       }));
@@ -43,7 +49,9 @@ export default class ProductShowcase extends React.Component {
    * Right now only for white showcases.
    */
   handleMouseLeave() {
+
     if (this.props.isWhite) {
+
       this.setState(_prevState => ({
         buttonText: this.props.buttonText
       }));
@@ -55,13 +63,16 @@ export default class ProductShowcase extends React.Component {
     const productDescription = (
       <div className="product-description">
         <p style={{ marginLeft: this.props.textIsLeft ? '0px' : null }}>
+
           <span className="bigger-text">
             {this.props.textBig}&nbsp;
             <span className={this.props.animatedEmojiClassName}>{this.props.animatedEmoji}</span>
           </span>
+
           <span className="smaller-text">
             {this.props.textSmall}
           </span>
+
           <button
             className={this.props.isWhite ? 'is-white' : ''}
             onClick={() => this.handlePressBuyButton()}
@@ -70,6 +81,7 @@ export default class ProductShowcase extends React.Component {
           >
             {this.state.buttonText}
           </button>
+
         </p>
       </div>
     );

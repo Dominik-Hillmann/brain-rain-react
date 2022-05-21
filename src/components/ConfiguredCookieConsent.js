@@ -19,6 +19,7 @@ export default class ConfiguredCookieConsent extends React.Component {
   }
 
   render() {
+
     return (
       <CookieConsent
         onAccept={() => this.handleTrackAccept()}

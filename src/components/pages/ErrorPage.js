@@ -1,9 +1,9 @@
 // Libraries
 import React from "react";
 // Stylesheets
-import '../css/ErrorPage.css';
+import '../../css/ErrorPage.css';
 // Images
-import logo from '../img/brain-rain-logo.png';
+import logo from '../../img/brain-rain-logo.png';
 
 /**
  * @class Page displayed on routes that are not implemented.

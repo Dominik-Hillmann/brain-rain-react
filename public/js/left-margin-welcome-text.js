@@ -72,5 +72,26 @@ const performResizes = () => {
   setMobileWelcomeTextBackground();
 };
 
-window.addEventListener('resize', performResizes);
-setTimeout(performResizes, 800);
+window.addEventListener('resize', () => {
+
+  try {
+    performResizes();
+
+  } catch (e) {
+    if (e instanceof TypeError) {
+      console.log('performResizes() did not apply because of missing landing page items.');
+    }
+  }
+});
+
+setTimeout(() => {
+
+  try {
+    performResizes();
+
+  } catch (e) {
+    if (e instanceof TypeError) {
+      console.log('performResizes() did not apply because of missing landing page items.');
+    }
+  }
+}, 800);

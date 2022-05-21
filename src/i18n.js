@@ -91,6 +91,25 @@ const resources = {
       'wiki': {
         'background': 'Background image',
         'title': 'Title'
+      },
+
+      'dolleshop': {
+        'buy': 'Buy',
+        'photobook': {
+          'title': `Photo books`,
+          'text': `A high-quality photo book of the Dolle village festival from June 17th 2022
+          to June 19th 2022.`
+        },
+        'calendar': {
+          'title': `Photo books`,
+          'text': `A high-quality photo book of the Dolle village festival from June 17th 2022
+          to June 19th 2022.`
+        },
+        'singlephotos': {
+          'title': `Photo books`,
+          'text': `A high-quality photo book of the Dolle village festival from June 17th 2022
+          to June 19th 2022.`
+        }
       }
     }
   },
@@ -181,6 +200,25 @@ const resources = {
       'wiki': {
         'background': 'Hintergrundbild',
         'title': 'Titel'
+      },
+
+      'dolleshop': {
+        'buy': 'Kaufen',
+        'photobook': {
+          'title': `Fotobücher`,
+          'text': `Ein hochwertiges Fotobuch mit den besten Bildern aus dem Dorffest von Dolle
+        vom 17. bis 19. Juni 2022.`
+        },
+        'calendar': {
+          'title': `Photo books`,
+          'text': `A high-quality photo book of the Dolle village festival from June 17th 2022
+          to June 19th 2022.`
+        },
+        'singlephotos': {
+          'title': `Fotobücher`,
+          'text': `Ein hochwertiges Fotobuch mit den besten Bildern aus dem Dorffest von Dolle
+        vom 17. bis 19. Juni 2022.`
+        }
       }
     }
   }

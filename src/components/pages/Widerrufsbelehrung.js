@@ -1,11 +1,11 @@
 // Libraries
 import React from "react";
 // Components
-import Navbar from './Navbar.js';
-import CustomFooter from './CustomFooter.js';
-import StandardMainWrapper from './StandardMainWrapper.js';
+import Navbar from '../Navbar.js';
+import CustomFooter from '../CustomFooter.js';
+import StandardMainWrapper from '../StandardMainWrapper.js';
 // Stylesheets
-import '../css/Imprint.css';
+import '../../css/Imprint.css';
 
 /**
  * @class The imprint all German websites need to have.
