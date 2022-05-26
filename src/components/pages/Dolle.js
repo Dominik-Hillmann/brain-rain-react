@@ -118,7 +118,9 @@ export default class Dolle extends React.Component {
 
       <StandardMainWrapper>
 
-        <div className="dolle-product">
+        <h1>Sie werden zu unserem Shop weitergeleitet...</h1>
+
+        {/*<div className="dolle-product">
           <div className="keep-left">
             <img src={photoBook} alt="People look at a book." />
           </div>
@@ -147,7 +149,7 @@ export default class Dolle extends React.Component {
               </button>
             </div>
           </div>
-        </div>
+        </div>*/}
 
       </StandardMainWrapper>
 
