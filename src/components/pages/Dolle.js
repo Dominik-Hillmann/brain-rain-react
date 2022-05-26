@@ -1,6 +1,7 @@
 // Libraries
 import React from "react";
 import Client from "shopify-buy";
+import Helmet from "react-helmet";
 // Components
 import Navbar from "../Navbar";
 import StandardMainWrapper from "../StandardMainWrapper";
@@ -30,8 +31,8 @@ export default class Dolle extends React.Component {
       amountCalendars: 1,
       checkout: null
     };
-
   }
+
 
   componentDidMount() {
 
@@ -46,6 +47,7 @@ export default class Dolle extends React.Component {
     });
   }
 
+  
   handleDecrementPhotoBooks() {
 
     this.setState((prevState) => {
@@ -56,6 +58,7 @@ export default class Dolle extends React.Component {
     });
   }
 
+
   handleIncrementPhotoBooks() {
 
     this.setState((prevState) => {
@@ -65,6 +68,7 @@ export default class Dolle extends React.Component {
       };
     });
   }
+
 
   handleBuyPhotoBook() {
 
@@ -80,6 +84,7 @@ export default class Dolle extends React.Component {
     });
   }
 
+
   handleDecrementCalendars() {
 
     this.setState((prevState) => {
@@ -89,6 +94,7 @@ export default class Dolle extends React.Component {
       };
     });
   }
+
 
   handleIncrementCalendars() {
 
@@ -104,6 +110,10 @@ export default class Dolle extends React.Component {
   render() {
 
     return (<>
+      <Helmet>
+        <meta http-equiv="refresh" content="0; URL=https://www.example.com/" />
+      </Helmet>
+
       <Navbar />
 
       <StandardMainWrapper>
