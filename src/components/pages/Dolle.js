@@ -111,7 +111,7 @@ export default class Dolle extends React.Component {
 
     return (<>
       <Helmet>
-        <meta http-equiv="refresh" content="0; URL=https://www.example.com/" />
+        <meta http-equiv="refresh" content="0; URL=https://brainrain.myshopify.com/" />
       </Helmet>
 
       <Navbar />
