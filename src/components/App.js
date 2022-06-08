@@ -13,14 +13,21 @@ import ErrorPage from './pages/ErrorPage.js';
  * @class Represents the website as a whole.
  */
 export default class App extends React.Component {
+
   render() {
+
     return (
       <Switch>
-        <Route path="/" component={LandingPage} exact />
+        <Route exact path="/" component={LandingPage} />
+
         <Route path="/imprint" component={Imprint} />
+
         <Route path="/agbs" component={Agbs} />
+
         <Route path="/widerruf" component={Widerrufsbelehrung} />
-        <Route path="/dolle" component={Dolle} />
+
+        <Route exact path="/dolle" component={Dolle} />
+
         <Route component={ErrorPage} />
       </Switch>
     );
