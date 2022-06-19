@@ -9,7 +9,7 @@ import Dolle from "./pages/Dolle";
 import Widerrufsbelehrung from './pages/Widerrufsbelehrung';
 import ErrorPage from './pages/ErrorPage.js';
 
-import MaiForward from './pages/dolle-forwards/87f9b26d.js';
+import Forward from "./pages/Forward";
 
 /**
  * @class Represents the website as a whole.
@@ -30,7 +30,37 @@ export default class App extends React.Component {
 
         <Route exact path="/dolle" component={Dolle} />
 
-        <Route exact path="/dolle/87f9b26d" component={MaiForward} />
+        <Route exact path="/dolle/be027bf2" >
+          <Forward link="https://apps.scrappbook.de/rJXeLe6Fq" />
+        </Route>
+
+        <Route exact path="/dolle/796bcfef" >
+          <Forward link="https://apps.scrappbook.de/S1fr38lpYq" />
+        </Route>
+
+        <Route exact path="/dolle/002d0c20" >
+          <Forward link="https://apps.scrappbook.de/Sk-A8x6F9" />
+        </Route>
+
+        <Route exact path="/dolle/4a0bc079" >
+          <Forward link="https://apps.scrappbook.de/HJgHyDeaYc" />
+        </Route>
+
+        <Route exact path="/dolle/87f9b26d" >
+          <Forward link="https://apps.scrappbook.de/HyU-wxpF5" />
+        </Route>
+
+        <Route exact path="/dolle/8c1c4a41" >
+          <Forward link="https://apps.scrappbook.de/HJsfPl6F9" />
+        </Route>
+
+        <Route exact path="/dolle/c30126e6" >
+          <Forward link="https://apps.scrappbook.de/ByMVwepF9" />
+        </Route>
+
+        <Route exact path="/dolle/7e2c74ea" >
+          <Forward link="https://apps.scrappbook.de/BklYSDlaFc" />
+        </Route>
 
         <Route component={ErrorPage} />
       </Switch>

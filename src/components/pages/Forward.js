@@ -6,15 +6,24 @@ import Navbar from "../Navbar";
 import StandardMainWrapper from "../StandardMainWrapper";
 import CustomFooter from "../CustomFooter";
 // Stylesheets
-import "../../../css/Dolle.css";
+import "../../css/Dolle.css";
 
-export default class MaiForward extends React.Component {
+export default class Forward extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  getLinkContent() {
+
+    return `0; URL=${this.props.link}`;
+  }
 
   render() {
 
     return (<>
       <Helmet>
-        <meta http-equiv="refresh" content="0; URL=https://apps.scrappbook.de/rJXeLe6Fq" />
+        <meta http-equiv="refresh" content={this.getLinkContent()} />
       </Helmet>
 
       <Navbar />
