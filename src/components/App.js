@@ -9,6 +9,8 @@ import Dolle from "./pages/Dolle";
 import Widerrufsbelehrung from './pages/Widerrufsbelehrung';
 import ErrorPage from './pages/ErrorPage.js';
 
+import MaiForward from './pages/dolle-forwards/87f9b26d.js';
+
 /**
  * @class Represents the website as a whole.
  */
@@ -27,6 +29,8 @@ export default class App extends React.Component {
         <Route path="/widerruf" component={Widerrufsbelehrung} />
 
         <Route exact path="/dolle" component={Dolle} />
+
+        <Route exact path="/dolle/87f9b26d" component={MaiForward} />
 
         <Route component={ErrorPage} />
       </Switch>
