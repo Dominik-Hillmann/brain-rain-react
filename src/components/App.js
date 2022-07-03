@@ -62,6 +62,19 @@ export default class App extends React.Component {
           <Forward link="https://apps.scrappbook.de/BklYSDlaFc" />
         </Route>
 
+        
+        <Route exact path="/dolle/ee251e90" >
+          <Forward link="https://apps.scrappbook.de/BJVM62Ccc" />
+        </Route>
+
+        <Route exact path="/dolle/c5875922" >
+          <Forward link="https://apps.scrappbook.de/Syl07a30c9" />
+        </Route>
+
+        <Route exact path="/dolle/508db725" >
+          <Forward link="https://apps.scrappbook.de/H10B6nAq9" />
+        </Route>
+
         <Route component={ErrorPage} />
       </Switch>
     );
